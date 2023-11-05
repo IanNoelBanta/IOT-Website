@@ -83,6 +83,10 @@
   align-items: center;
   justify-content: flex-start;
 }
+.logout-button{
+  background-color: Transparent;
+  border:none
+}
 .frame-child {
   position: relative;
   border-radius: 32px;

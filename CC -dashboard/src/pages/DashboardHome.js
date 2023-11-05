@@ -45,7 +45,12 @@ const DashboardHome = () => {
           </div>
         </div>
         <div className="logout-wrapper">
-          <img className="dashboard-icon" alt="" src="/logout.svg" />
+          <button
+            className="logout-button"
+            onClick={() => (window.location.href = "http://localhost:3000")}
+          >
+            <img className="dashboard-icon" alt="" src="/logout.svg" />
+          </button>
         </div>
         <div className="rectangle-wrapper">
           <div className="frame-child" />
