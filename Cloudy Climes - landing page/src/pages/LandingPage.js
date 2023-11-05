@@ -19,7 +19,7 @@ const LandingPage = () => {
         Collection with Meteorological Instruments in Cavite City
       </div>
       <div className="hover" />
-      <button className="log-in">GET STARTED</button>
+      <button className="log-in" onClick={() => window.location.href = 'http://localhost:3001'}>GET STARTED</button>
     </div>
   );
 };
