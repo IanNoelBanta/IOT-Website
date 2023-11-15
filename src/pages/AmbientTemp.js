@@ -6,8 +6,9 @@ import "../styles/AmbientTemp.css";
 const AmbientTemp = () => {
   return (
     <>
+    <div className="title">AMBIENT TEMPERATURE</div>
       <Navbar></Navbar>
-      <div>AMBIENT TEMP TOH BOSS</div>
+      
     </>
   );
 };
