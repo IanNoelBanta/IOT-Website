@@ -2,7 +2,6 @@
   position: relative;
   width: 24px;
   height: 24px;
-  left: -10px;
   overflow: hidden;
   flex-shrink: 0;
   
@@ -27,7 +26,6 @@
 .cash-icon {
   width: 24px;
   height: 26px;
-  left: -10px;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -133,8 +131,8 @@
 }
 .thermostat-black-24dp-2-icon {
   position: absolute;
-  top: 360px;
-  left: 30px;
+  top: 309px;
+  left: 37px;
   width: 48px;
   height: 33px;
   overflow: hidden;
@@ -142,14 +140,14 @@
 .cloudy-snowing-black-24dp-2-icon,
 .location-city-black-24dp-2-icon {
   position: absolute;
-  top: 680px;
-  left: 43px;
+  top: 633px;
+  left: 51px;
   width: 24px;
   height: 24px;
   overflow: hidden;
 }
 .location-city-black-24dp-2-icon {
-  top: 748px;
+  top: 699px;
 }
 .ambient-temperature1 {
   position: absolute;
@@ -174,4 +172,11 @@
   font-size: var(--font-size-smi);
   color: var(--color-gray);
   font-family: var(--font-poppins);
+}
+
+.title{
+  text-align: center;
+  color: purple;
+  font-weight: bold;
+  font-size: x-large;
 }

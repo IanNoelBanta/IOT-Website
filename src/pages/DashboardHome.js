@@ -1,10 +1,10 @@
 import Navbar from "../components/Navbar";
-import "../styles/DashboardHome.css";
+// import "../styles/DashboardHome.css";
 
 const DashboardHome = () => {
   return (
     <>
-      <div className="title">DASHBOARD HOME TOH BOSS</div>
+      <div className="title">Dashboard</div>
       <Navbar></Navbar>
     </>
   );

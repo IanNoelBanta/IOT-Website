@@ -4,6 +4,12 @@ import "./index.css";
 import App from "./App";
 import AmbientTemp from "../src/pages/AmbientTemp";
 import DashboardHome from "../src/pages/DashboardHome";
+import SurfaceTemperature from "../src/pages/SurfaceTemperature";
+import RelativeHumidity from "../src/pages/RelativeHumidity";
+import WindSpeedDirection from "../src/pages/WindSpeedDirection";
+import SolarIrradiance from "../src/pages/SolarIrradiance";
+import Rainfall from "../src/pages/Rainfall";
+import LandingPage from "../src/pages/LandingPage";
 
 
 import { createBrowserRouter, Route, RouterProvider } from "react-router-dom";
@@ -20,9 +26,42 @@ const router = createBrowserRouter([
   },
 
   {
+    path: "/SurfaceTemperature",
+    element: <SurfaceTemperature/>,
+  },
+
+  {
+    path: "/RelativeHumidity",
+    element: <RelativeHumidity/>,
+  },
+
+  {
+    path: "/WindSpeedDirection",
+    element: <WindSpeedDirection/>,
+  },
+
+  {
+    path: "/Rainfall",
+    element: <Rainfall/>,
+  },
+
+  {
+    path: "/SolarIrradiance",
+    element: <SolarIrradiance/>,
+  },
+
+  {
     path: "/DashboardHome",
     element: <DashboardHome/>,
   },
+
+  {
+    path: "/LandingPage",
+    element: <LandingPage/>,
+  },
+
+
+
 
 ]);
 

@@ -1,8 +1,13 @@
-import "./Rainfall.css";
+import Navbar from "../components/Navbar";
+// import "./Rainfall.css";
 
 const Rainfall = () => {
   return (
-    <div>RAINFALL TOH BOSS</div>
+    <>
+    <div className="title">RAINFALL</div>
+      <Navbar></Navbar>
+      
+    </>
   );
 };
 

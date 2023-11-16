@@ -1,8 +1,9 @@
-import "./LandingPage.css";
+// import "../styles/LandingPage.css";
 
 const LandingPage = () => {
   return (
-    <div>LANDING PAGE TOH BOSS</div>
+    <><div>LANDING PAGE TOH BOSS</div>
+    </>
   );
 };
 
