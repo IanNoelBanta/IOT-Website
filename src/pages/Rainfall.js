@@ -4,9 +4,10 @@ import Navbar from "../components/Navbar";
 const Rainfall = () => {
   return (
     <>
-    <div className="title">RAINFALL</div>
+    <div className="solar-irradiance">
+    <div className="rainfall2">RAINFALL</div>
       <Navbar></Navbar>
-      
+      </div>
     </>
   );
 };

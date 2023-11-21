@@ -5,6 +5,7 @@
 // import Rainfall from "./pages/Rainfall";
 // import RelativeHumidity from "./pages/RelativeHumidity";
 import Navbar from "./components/Navbar";
+import NavbarWind from "./components/NavbarWind";
 import SolarIrradiance from "./pages/SolarIrradiance";
 // import WindSpeedDirection from "./pages/WindSpeedDirection";
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
+      <NavbarWind/>
     </div>
   );
 }

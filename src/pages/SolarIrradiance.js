@@ -4,9 +4,10 @@ import "../styles/SolarIrradiance.css";
 const SolarIrradiance = () => {
   return (
     <>
-    <div className="title">SOLAR IRRADIANCE</div>
+    <div className="solar-irradiance">
+    <div className="solar-irradiance2">SOLAR IRRADIANCE</div>
       <Navbar></Navbar>
-      
+      </div>
     </>
   );
 };

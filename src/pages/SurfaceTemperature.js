@@ -4,9 +4,10 @@ import Navbar from "../components/Navbar";
 const SurfaceTemperature = () => {
   return (
     <>
-    <div className="title">SURFACE TEMPERATURE</div>
+    <div className="surface-temperature">
+    <div className="surface-temperature2">SURFACE TEMPERATURE</div>
       <Navbar></Navbar>
-      
+      </div>
     </>
   );
 };
