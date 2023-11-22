@@ -172,4 +172,18 @@
     color: var(--color-gray);
     font-family: var(--font-poppins);
   }
+
+  .frame-parent-wind {
+    position: absolute;
+    top: calc(50% - 1036px);
+    left: 30px;
+    border-radius: 24px;
+    background: linear-gradient(0deg, #925fe2, rgba(146, 95, 226, 0), #e2d4f7);
+    width: 233px;
+    height: 2052px;
+    overflow: hidden;
+    font-size: var(--font-size-smi);
+    color: var(--color-gray);
+    font-family: var(--font-poppins);
+  }
   

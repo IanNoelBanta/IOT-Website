@@ -1,12 +1,15 @@
-import Navbar from "../components/Navbar";
+import NavbarWind from "../components/NavbarWind";
 // import "../styles/WindSpeedDirection.css";
 
 const WindSpeedDirection = () => {
   return (
     <>
-    <div className="title">WIND SPEED DIRECTION</div>
-      <Navbar></Navbar>
-      
+    <div className="wind-speeddirection">
+    <div className="wind-speed">WIND SPEED</div>
+      <div className="wind-direction">WIND DIRECTION</div>
+
+      <NavbarWind></NavbarWind>
+      </div>
     </>
   );
 };
