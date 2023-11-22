@@ -6,9 +6,10 @@ import "../styles/AmbientTemp.css";
 const AmbientTemp = () => {
   return (
     <>
-    <div className="title">AMBIENT TEMPERATURE</div>
+    <div className="ambient-temp">
+    <div className="ambient-temperature1">AMBIENT TEMPERATURE</div>
       <Navbar></Navbar>
-      
+      </div>
     </>
   );
 };
