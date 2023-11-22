@@ -1,5 +1,4 @@
 import Navbar from "../components/Navbar";
-// import "../styles/DashboardHome.css";
 
 const DashboardHome = () => {
   return (
@@ -9,7 +8,7 @@ const DashboardHome = () => {
         
       {/* <div className="title">Dashboard</div> */}
       
-      <video autoPlay loop playsInline className="back-video" alt="" src="/MovingClouds.mp4">
+      <video autoPlay loop playsInline className="back-video" alt="" src="/Clouds.mp4">
       </video>
 
       <div className="frame-container">

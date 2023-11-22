@@ -10,6 +10,7 @@
     font-weight: 600;
     opacity: 0.35;
   }
+
   .dashboard-parent {
     display: flex;
     flex-direction: row;
@@ -20,6 +21,7 @@
   }
   .ambient-temperature {
     position: relative;
+      
   }
   .cash-parent {
     display: flex;
@@ -186,4 +188,6 @@
     color: var(--color-gray);
     font-family: var(--font-poppins);
   }
+
+  
   
