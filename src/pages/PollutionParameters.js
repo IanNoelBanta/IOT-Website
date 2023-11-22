@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 
-const Rainfall = () => {
+const PollutionParameters = () => {
   return (
     <>
       <Navbar/>
@@ -8,4 +8,4 @@ const Rainfall = () => {
   );
 };
 
-export default Rainfall;
+export default PollutionParameters;

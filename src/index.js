@@ -10,6 +10,8 @@ import WindSpeedDirection from "../src/pages/WindSpeedDirection";
 import SolarIrradiance from "../src/pages/SolarIrradiance";
 import Rainfall from "../src/pages/Rainfall";
 import LandingPage from "../src/pages/LandingPage";
+import PollutionParameters from "../src/pages/PollutionParameters";
+
 
 
 import { createBrowserRouter, Route, RouterProvider } from "react-router-dom";
@@ -19,7 +21,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <App/>,
   },
-
+  
+  {
+    path: "/DashboardHome",
+    element: <DashboardHome/>,
+  },
   {
     path: "/AmbientTemp",
     element: <AmbientTemp/>,
@@ -51,18 +57,14 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/DashboardHome",
-    element: <DashboardHome/>,
+    path: "/PollutionParameters",
+    element: <PollutionParameters/>,
   },
 
   {
     path: "/LandingPage",
     element: <LandingPage/>,
   },
-
-
-
-
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

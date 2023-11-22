@@ -19,10 +19,11 @@ const LandingPage = () => {
         Designing an Automatic Weather Station for Continuous, Accurate Data
         Collection with Meteorological Instruments in Cavite City
       </div>
-      <div className="hover" />
-      <Link to="/DashboardHome">
-      <button className="log-in">GET STARTED</button>
-      </Link>
+      <div className="hover">
+        <Link to="/DashboardHome">
+          <button className="log-in">GET STARTED</button>
+        </Link>
+      </div>
     </div>
   );
 };

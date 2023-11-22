@@ -1,7 +1,7 @@
 // import HelloWorld from "./components/HelloWorld";
 // import AmbientTemp from "./pages/AmbientTemp";
 // import DashboardHome from "./pages/DashboardHome";
-// import LandingPage from "./pages/LandingPage";
+import LandingPage from "./pages/LandingPage";
 // import Rainfall from "./pages/Rainfall";
 // import RelativeHumidity from "./pages/RelativeHumidity";
 import Navbar from "./components/Navbar";
@@ -13,8 +13,7 @@ import SolarIrradiance from "./pages/SolarIrradiance";
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <NavbarWind/>
+      <LandingPage/>
     </div>
   );
 }
