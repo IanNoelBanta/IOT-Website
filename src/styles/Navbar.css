@@ -59,31 +59,6 @@
   gap: var(--gap-xs);
   color: var(--color-white);
 }
-.cash-parent {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-xs);
-}
-.cash-icon {
-  position: relative;
-  width: 100px;
-  height: 26px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.cash-parent3 {
-  gap: var(--gap-xs);
-  text-align: left;
-}
-.cash-parent3,
-.cash-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
 .frame-group,
 .logout-wrapper {
   position: absolute;
