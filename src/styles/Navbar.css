@@ -88,3 +88,195 @@
   height: 128px;
 }
 
+.ambient-temperature1 {
+  position: absolute;
+  top: 165px;
+  left: 318px;
+  font-size: 37px;
+  font-weight: 600;
+  color: #925fe2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 491px;
+  height: 61px;
+}
+
+.surface-temperature2 {
+  position: absolute;
+  top: 165px;
+  left: 318px;
+  font-size: 37px;
+  font-weight: 600;
+  color: #925fe2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 491px;
+  height: 61px;
+}
+
+.relative-humidity2 {
+  position: absolute;
+  top: 165px;
+  left: 318px;
+  font-size: 37px;
+  font-weight: 600;
+  color: #925fe2;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 491px;
+  height: 61px;
+}
+
+.wind-speeddirection {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 2136px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-31xl);
+  color: var(--color-mediumslateblue);
+  font-family: var(--font-roboto);
+}
+
+.wind-direction,
+.wind-speed {
+  position: absolute;
+  top: 165px;
+  left: 318px;
+  font-size: 37px;
+  font-weight: 600;
+  color: #925fe2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 491px;
+  height: 61px;
+}
+
+.wind-direction {
+  top: 1068px;
+  left: 332px;
+}
+
+.solar-irradiance2 {
+  position: absolute;
+  top: 165px;
+  left: 318px;
+  font-size: 37px;
+  font-weight: 600;
+  color: #925fe2;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 491px;
+  height: 61px;
+}
+
+
+.rainfall2 {
+  position: absolute;
+  top: 165px;
+  left: 318px;
+  font-size: 37px;
+  font-weight: 600;
+  color: #925fe2;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 491px;
+  height: 61px;
+}
+
+.pollution-parameters1 {
+  position: absolute;
+  top: 165px;
+  left: 318px;
+  font-size: 37px;
+  font-weight: 600;
+  color: #925fe2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 491px;
+  height: 61px;
+}
+
+.dashboard-home {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-smi);
+  color: var(--color-gray-100);
+  font-family: var(--font-poppins);
+}
+
+.back-video{
+  /* position: absolute; */
+  /* right: 0; */
+  /* bottom: 0; */
+  /* z-index: -1; */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  object-fit: cover;
+
+}
+
+.frame-container {
+  position: absolute;
+  top: 80px;
+  left: 313px;
+  border-radius: 24px;
+  background: linear-gradient(98.5deg, #925fe2, #7e2093);
+  box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+  width: 1095px;
+  height: 158px;
+  overflow: hidden;
+  font-size: 32px;
+  color: var(--color-white);
+}
+
+.home {
+  position: relative;
+  font-weight: 600;
+}
+
+.choose-a-parameter {
+  position: relative;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.welcome-parent {
+  position: absolute;
+  top: 52px;
+  left: 33px;
+  height: 73px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.75);
+}
+.dashboard {
+  position: absolute;
+  top: calc(50% - 66px);
+  left: 33px;
+  font-size: var(--font-size-base);
+  color: rgba(255, 255, 255, 0.33);
+}
+
+.the-map-showcases {
+  position: absolute;
+  top: 273px;
+  left: 320px;
+  font-size: var(--font-size-base);
+  color: rgba(6, 5, 5, 0.75);
+}
+

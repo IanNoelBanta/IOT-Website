@@ -4,8 +4,8 @@ import "../styles/DashboardHome.css";
 const DashboardHome = () => {
   return (
     <>
-      {/* <div className="dashboard-home">
-        <div className="title">Dashboard</div>
+      
+        
 
         <video
           autoPlay
@@ -29,7 +29,7 @@ const DashboardHome = () => {
         <div className="the-map-showcases">
           The map showcases the specific location where AWS has been deployed.
         </div>
-      </div> */}
+      
 
       <Navbar></Navbar>
     </>

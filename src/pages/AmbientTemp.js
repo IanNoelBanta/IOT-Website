@@ -5,7 +5,9 @@ import Navbar from "../components/Navbar";
 const AmbientTemp = () => {
   return (
     <>
-    <div> AMBIENT TEMPERATURE</div>
+    
+    <div className="ambient-temperature1"> AMBIENT TEMPERATURE</div>
+    
       <Navbar/>
     </>
   );

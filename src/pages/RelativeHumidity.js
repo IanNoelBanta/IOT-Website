@@ -3,7 +3,9 @@ import Navbar from "../components/Navbar";
 const RelativeHumidity = () => {
   return (
     <>
-    <div>RELATIVE HUMIDITY</div>
+    
+    <div className="relative-humidity2">RELATIVE HUMIDITY</div>
+    
       <Navbar/>
       
     </>

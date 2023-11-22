@@ -54,14 +54,14 @@ function Navbar() {
           </div>
 
           <div className="dashboard-parent">
-            <img className="dashboard-icon" alt="" src="/cash4.svg" />
+            <img className="dashboard-icon" alt="" src="/cloudy-snowing-black-24dp-2.svg" />
             <Link to="/Rainfall">
               <div className="rainfall">Rainfall</div>
             </Link>
           </div>
 
           <div className="dashboard-parent">
-            <img className="dashboard-icon" alt="" src="/cash4.svg" />
+            <img className="dashboard-icon" alt="" src="/location-city-black-24dp-2.svg" />
             <Link to="/PollutionParameters">
               <div className="pollution-parameters">Pollution Parameters</div>
             </Link>
@@ -85,6 +85,7 @@ function Navbar() {
           alt=""
           src="/cloudyclimeshighresolutionlogoblacktransparent-1@2x.png"
         />
+        
       </div>
     </>
   );
