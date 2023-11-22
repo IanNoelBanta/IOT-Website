@@ -1,0 +1,52 @@
+-- SA LABAS TOH --
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAryp59TRQdG60gnbI8v7jeXatwbrPJ8VY",
+  authDomain: "group-c-weather-station.firebaseapp.com",
+  databaseURL: "https://group-c-weather-station-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "group-c-weather-station",
+  storageBucket: "group-c-weather-station.appspot.com",
+  messagingSenderId: "923286028127",
+  appId: "1:923286028127:web:411d78817ac911d14880ea"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+
+-- SA LOOB --
+const [user, setMessage] = useState("");
+const [pass, setPassword] = useState("");
+const [displayUser, setDisplayUser] = useState("");
+const [displayPass, setDisplayPass] = useState("");
+
+  const handleChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const handleChangePass = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const handleSubmitLogin = (event) => {
+    setDisplayUser(user);
+    setDisplayPass(pass);
+
+    signInWithEmailAndPassword(auth, user, pass)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        console.log("BOOM NAKAPASOK KA TANGA!");
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log("ERROR TANGA!");
+        console.log(errorCode);
+
+      });
+  };
+
+  <button className="login-button" onClick={handleSubmitLogin}>

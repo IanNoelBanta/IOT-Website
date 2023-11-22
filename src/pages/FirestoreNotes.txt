@@ -1,0 +1,47 @@
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { collection, addDoc, getDocs } from "firebase/firestore"; 
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAryp59TRQdG60gnbI8v7jeXatwbrPJ8VY",
+  authDomain: "group-c-weather-station.firebaseapp.com",
+  databaseURL: "https://group-c-weather-station-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "group-c-weather-station",
+  storageBucket: "group-c-weather-station.appspot.com",
+  messagingSenderId: "923286028127",
+  appId: "1:923286028127:web:411d78817ac911d14880ea"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// try {
+//   const docRef = await addDoc(collection(db, "users"), {
+//     first: "Ada",
+//     last: "Lovelace",
+//     born: 1815
+//   });
+//   console.log("Document written with ID: ", docRef.id);
+// } catch (e) {
+//   console.error("Error adding document: ", e);
+// }
+
+// send data
+try {
+  const docRef = await addDoc(collection(db, "users"), {
+    // key-value pairs
+    first: "Alan",
+    middle: "Mathison",
+    last: "Turing",
+    born: 1912
+  });
+  console.log("Document written with ID: ", docRef.id);
+} catch (e) {
+  console.error("Error adding document: ", e);
+}
+
+// read data
+const querySnapshot = await getDocs(collection(db, "users"));
+querySnapshot.forEach((doc) => {
+  console.log(`${doc.id} => ${doc.data()}`);
+});

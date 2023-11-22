@@ -11,63 +11,65 @@ import SolarIrradiance from "../src/pages/SolarIrradiance";
 import Rainfall from "../src/pages/Rainfall";
 import LandingPage from "../src/pages/LandingPage";
 import PollutionParameters from "../src/pages/PollutionParameters";
+import Login from "../src/pages/Login";
 
-
-
-import { createBrowserRouter, Route, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
   },
-  
+
+  {
+    path: "/Login",
+    element: <Login />,
+  },
+
   {
     path: "/DashboardHome",
-    element: <DashboardHome/>,
+    element: <DashboardHome />,
   },
   {
     path: "/AmbientTemp",
-    element: <AmbientTemp/>,
+    element: <AmbientTemp />,
   },
 
   {
     path: "/SurfaceTemperature",
-    element: <SurfaceTemperature/>,
+    element: <SurfaceTemperature />,
   },
 
   {
     path: "/RelativeHumidity",
-    element: <RelativeHumidity/>,
+    element: <RelativeHumidity />,
   },
 
   {
     path: "/WindSpeedDirection",
-    element: <WindSpeedDirection/>,
+    element: <WindSpeedDirection />,
   },
 
   {
     path: "/Rainfall",
-    element: <Rainfall/>,
+    element: <Rainfall />,
   },
 
   {
     path: "/SolarIrradiance",
-    element: <SolarIrradiance/>,
+    element: <SolarIrradiance />,
   },
 
   {
     path: "/PollutionParameters",
-    element: <PollutionParameters/>,
+    element: <PollutionParameters />,
   },
 
   {
     path: "/LandingPage",
-    element: <LandingPage/>,
+    element: <LandingPage />,
   },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-    <RouterProvider router={router}/>
-);
+root.render(<RouterProvider router={router} />);
