@@ -1,0 +1,41 @@
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, set, onValue   } from "firebase/database";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAryp59TRQdG60gnbI8v7jeXatwbrPJ8VY",
+  authDomain: "group-c-weather-station.firebaseapp.com",
+  databaseURL: "https://group-c-weather-station-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "group-c-weather-station",
+  storageBucket: "group-c-weather-station.appspot.com",
+  messagingSenderId: "923286028127",
+  appId: "1:923286028127:web:411d78817ac911d14880ea"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+// Initialize Realtime Database and get a reference to the service
+const database = getDatabase(app);
+
+
+// Write json
+// Set inooverwrite lang
+// function writeUserData(userId, name, email, imageUrl) {
+//   const db = getDatabase();
+//   set(ref(db, 'users/' + userId), {
+//     username: name,
+//     email: email,
+//     profile_picture : imageUrl
+//   });
+// }
+
+// writeUserData(12345, "ian", "iannoelbanta@gmail.com", "idk url daw");
+
+
+// Read json tuwing may changes
+// const starCountRef = ref(database, '/users/12345/email');
+// onValue(starCountRef, (snapshot) => {
+//   const data = snapshot.val();
+//   // updateStarCount(postElement, data);
+//   console.log("ETO YUNG NAREAD SA JSON: " + String(data));
+// });
