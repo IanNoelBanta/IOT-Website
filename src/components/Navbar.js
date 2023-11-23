@@ -10,7 +10,7 @@ function Navbar() {
           <div className="dashboard-parent">
             <img className="dashboard-icon" alt="" src="/dashboard.svg" />
             <Link to="/DashboardHome">
-              <div className="home">Home</div>
+              <div className="labels">Home</div>
             </Link>
           </div>
 
@@ -21,49 +21,49 @@ function Navbar() {
               src="/thermostat-black-24dp-2.svg"
             />
             <Link to="/AmbientTemp">
-              <div className="ambient-temperature">Ambient Temperature</div>
+              <div className="labels">Ambient Temperature</div>
             </Link>
           </div>
 
           <div className="dashboard-parent">
             <img className="dashboard-icon" alt="" src="/cash.svg" />
             <Link to="/SurfaceTemperature">
-              <div className="ambient-temperature">Surface Temperature</div>
+              <div className="labels">Surface Temperature</div>
             </Link>
           </div>
 
           <div className="dashboard-parent">
             <img className="dashboard-icon" alt="" src="/cash1.svg" />
             <Link to="/RelativeHumidity">
-              <div className="ambient-temperature">Relative Humidity</div>
+              <div className="labels">Relative Humidity</div>
             </Link>
           </div>
 
           <div className="dashboard-parent">
             <img className="dashboard-icon" alt="" src="/cash2.svg" />
             <Link to="/WindSpeedDirection">
-              <div className="ambient-temperature">Wind Speed/Direction</div>
+              <div className="labels">Wind Speed/Direction</div>
             </Link>
           </div>
 
           <div className="dashboard-parent">
             <img className="dashboard-icon" alt="" src="/cash3.svg" />
             <Link to="/SolarIrradiance">
-              <div className="ambient-temperature">Solar Irradiance</div>
+              <div className="labels">Solar Irradiance</div>
             </Link>
           </div>
 
           <div className="dashboard-parent">
             <img className="dashboard-icon" alt="" src="/cloudy-snowing-black-24dp-2.svg" />
             <Link to="/Rainfall">
-              <div className="rainfall">Rainfall</div>
+              <div className="labels">Rainfall</div>
             </Link>
           </div>
 
           <div className="dashboard-parent">
             <img className="dashboard-icon" alt="" src="/location-city-black-24dp-2.svg" />
             <Link to="/PollutionParameters">
-              <div className="pollution-parameters">Pollution Parameters</div>
+              <div className="labels">Pollution Parameters</div>
             </Link>
           </div>
           <div />

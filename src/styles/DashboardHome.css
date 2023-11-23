@@ -1,0 +1,56 @@
+.back-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.frame-container {
+    position: absolute;
+    top: 80px;
+    left: 313px;
+    border-radius: 24px;
+    background: linear-gradient(98.5deg, #925fe2, #7e2093);
+    box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
+    width: 1095px;
+    height: 158px;
+    overflow: hidden;
+    font-size: 32px;
+    color: var(--color-white);
+}
+.welcome-parent {
+    position: absolute;
+    top: 52px;
+    left: 33px;
+    height: 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.75);
+}
+/* .home {
+    position: relative;
+    font-weight: 600;
+} */
+
+.choose-a-parameter {
+    position: relative;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.dashboard {
+    position: absolute;
+    top: calc(50% - 66px);
+    left: 33px;
+    font-size: var(--font-size-base);
+    color: rgba(255, 255, 255, 0.33);
+}
+.the-map-showcases {
+    position: absolute;
+    top: 273px;
+    left: 320px;
+    font-size: var(--font-size-base);
+    color: rgba(6, 5, 5, 0.75);
+}
