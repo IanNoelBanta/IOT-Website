@@ -1,13 +1,12 @@
 import Navbar from "../components/Navbar";
-// import "../../public/assets/ambient-temp";
-// import "../assets/ambient-temp";
+import "../styles/AmbientTemp.css";
 
 const AmbientTemp = () => {
   return (
     <>
-    
+    <div className="ambient-temp">
     <div className="ambient-temperature1"> AMBIENT TEMPERATURE</div>
-    
+    </div>
       <Navbar/>
     </>
   );
