@@ -26,8 +26,7 @@ const DashboardHome = () => {
         </div>
         <div className="dashboard">Dashboard</div>
       </div>
-      <div className="the-map-showcases">
-        The map showcases the specific location where AWS has been deployed.
+      <div className="the-map-showcases">The map showcases the specific location where AWS has been deployed.
       </div>
 
       
@@ -36,43 +35,186 @@ const DashboardHome = () => {
 
     
       <Navbar></Navbar>
+
+      
       <div class="weather-condition">
-    <h3>Current Weather</h3>
+      <div class="card2">
+        <h3 class="card-heading">Today's Highlights</h3>
+        <div class="content"><img
+              className="weather-png"
+              alt=""
+              src="/weather.png"
+            />
+            </div>
+      </div>
+    </div>
+
+    <div class="current-weather">
+      <div class="card2">
+        <h4 class="card-heading">Current Weather</h4>
+        
+        
+      </div>
+
+       <div class="temprature">
+        <h1 id="temp">0</h1>
+        <span class="temp-unit">°C</span>
+      </div> 
+
+      <div class="date-time">
+        <p id="date-time">Monday, 12:00</p>
+      </div>
+
+       <div class="condition-rain">
+        <div class="condition">
+          <div class="condition" id="condition">condition</div>
+        </div>
+      </div> 
+
+
+
+
+      
     </div>
 
     <div class="wind-speed-direction">
-    <h3>Wind Direction</h3>
+    <div class="card2">
+        <h4 class="card-heading">Wind Direction</h4>
+        <div class="content">
+        <img
+              className="compass-png"
+              alt=""
+              src="/compass.png"
+            />
+          {/* <p class="value-index">0</p> */}
+        </div>
+      </div>
+    
     </div>
 
-    <div class="temp">
-    <h3>Temperature</h3>
+
+    <div class="temp1">
+    <div class="card2">
+        <h4 class="card-heading">Ambient Temperature</h4>
+        <div class="content">
+
+        <img
+              className="thermometer-png"
+              alt=""
+              src="/thermometer.png"
+            />
+          {/* <p class="value-index">0</p> */}
+        </div>
+      </div>
+    
     </div>
 
     <div class="humid">
-    <h3>Humidity</h3>
+      <div class="card2">
+        <h4 class="card-heading">Relative Humidity</h4>
+        <div class="content">
+          <p class="value-index">0</p>
+        </div>
+      </div>
+    
     </div>
 
     <div class="surf-temp">
-    <h3>Temperature</h3>
+    <div class="card2">
+        <h4 class="card-heading">Surface Temperature</h4>
+        <div class="content">
+          <p class="value-index">0</p>
+        </div>
+      </div>
+    
     </div>
 
     <div class="rain">
-    <h3>Rainfall</h3>
+    <div class="card2">
+        <h4 class="card-heading">Rainfall</h4>
+        <div class="content">
+          <p class="value-index">0</p>
+        </div>
+      </div>
+    
     </div>
 
     <div class="solar">
-    <h3>Solar Irradiance</h3>
+    <div class="card2">
+        <h4 class="card-heading">Solar Irradiance</h4>
+        <div class="content">
+          <p class="value-index">0</p>
+        </div>
+      </div>
+    
     </div>
 
     <div class="wind-speed-direction1">
-    <h3>Wind Speed</h3>
+    <div class="card2">
+        <h4 class="card-heading">Wind Speed</h4>
+        <div class="content">
+          <p class="value-index">0</p>
+        </div>
+      </div>
+    
     </div>
 
     <div class="pol-par">
-    <h3>Pollution Parameters</h3>
+    <div class="card2">
+        <h4 class="card-heading">Pollution Parameters</h4>
+        <div class="content">
+          <p class="value-index">0</p>
+        </div>
+      </div>
+
+      
+    
     </div>
     </>
   );
 };
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const temp = document.getElementById("temp");
+//   const date = document.getElementById("date-time");
+//   let currentCity = "";
+//   let currentUnit = "";
+//   let hourlyorWeek = "Week";
+
+//   function getDateTime() {
+//     let now = new Date(),
+//       hour = now.getHours(),
+//       minute = now.getMinutes();
+
+//     let days = [
+//       "Sunday",
+//       "Monday",
+//       "Tuesday",
+//       "Wednesday",
+//       "Thursday",
+//       "Friday",
+//       "Saturday",
+//     ];
+
+//     hour = hour % 12;
+//     if (hour < 10) {
+//       hour = "0" + hour;
+//     }
+
+//     if (minute < 10) {
+//       minute = "0" + minute;
+//     }
+
+//     let dayString = days[now.getDay()];
+//     return `${dayString}, ${hour}:${minute}`;
+//   }
+
+//   date.innerText = getDateTime();
+
+//   setInterval(() => {
+//     date.innerText = getDateTime();
+//   }, 1000);
+// });
+    
 export default DashboardHome;
+
