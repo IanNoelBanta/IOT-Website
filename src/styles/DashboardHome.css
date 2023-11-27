@@ -163,15 +163,29 @@
     
 }
 
+.content-temp{
+    text-align: center;
+    font-size: 30px;
+    margin-top: -15px;
+}
+
 .compass-png{
     width: 225px;
     margin-left: 80px;
+}
+
+.content-wind{
+    text-align: center;
+    font-size: 30px;
+    margin-top: -15px;
 }
 
 .weather-png{
     width: 120px;
     margin-left: 35px;
 }
+
+
 
 .humid {
     position: absolute;

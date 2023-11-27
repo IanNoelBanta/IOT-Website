@@ -86,7 +86,9 @@ const DashboardHome = () => {
               alt=""
               src="/compass.png"
             />
-          {/* <p class="value-index">0</p> */}
+            <div class="content-temp">
+           <p class="value-index">0</p> 
+          </div>
         </div>
       </div>
     
@@ -96,15 +98,17 @@ const DashboardHome = () => {
     <div class="temp1">
     <div class="card2">
         <h4 class="card-heading">Ambient Temperature</h4>
-        <div class="content">
+        
 
-        <img
+         <img
               className="thermometer-png"
               alt=""
               src="/thermometer.png"
-            />
-          {/* <p class="value-index">0</p> */}
-        </div>
+            /> 
+            <div class="content-temp">
+           <p class="value-index">0</p> 
+           </div>
+        
       </div>
     
     </div>
