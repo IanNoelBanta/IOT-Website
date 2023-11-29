@@ -20,7 +20,7 @@ const LandingPage = () => {
         Collection with Meteorological Instruments in Cavite City
       </div>
       <div className="hover">
-        <Link to="/DashboardHome">
+        <Link to="/Login">
           <button className="log-in">GET STARTED</button>
         </Link>
       </div>

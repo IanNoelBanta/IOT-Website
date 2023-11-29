@@ -1,12 +1,18 @@
 import Navbar from "../components/Navbar";
 import "../styles/DashboardHome.css";
+// import firebaseConfig from "../utils/FirebaseConfig"
+
+// import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+// import { initializeApp } from "firebase/app";
+
+// const app = initializeApp(firebaseConfig);
 
 const DashboardHome = () => {
   return (
     <>
 
 
-    
+
       <video
         autoPlay
         loop

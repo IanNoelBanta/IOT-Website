@@ -11,6 +11,8 @@ import SolarIrradiance from "../src/pages/SolarIrradiance";
 import Rainfall from "../src/pages/Rainfall";
 import LandingPage from "../src/pages/LandingPage";
 import PollutionParameters from "../src/pages/PollutionParameters";
+import Login from "../src/pages/Login";
+
 
 
 
@@ -65,6 +67,12 @@ const router = createBrowserRouter([
     path: "/LandingPage",
     element: <LandingPage/>,
   },
+
+  {
+    path: "/Login",
+    element: <Login/>,
+  },
+
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
