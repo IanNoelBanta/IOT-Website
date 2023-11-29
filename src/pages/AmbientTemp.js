@@ -3,12 +3,16 @@ import "../styles/AmbientTemp.css";
 import Chart from 'chart.js/auto';
 
 const AmbientTemp = () => {
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>;
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   const ctx = document.getElementById("myChart");
 
+  const handleResize = (myChart) => {
+    myChart.resize();
+    }
   new Chart(ctx, {
-    type: "bar",
+    type: "line",
     data: {
       labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
       datasets: [
@@ -20,20 +24,33 @@ const AmbientTemp = () => {
       ],
     },
     options: {
+      responsive: true,
+      onResize: handleResize,
+      maintainAspectRatio: false,
       scales: {
+        // x: {
+        //   max: 69
+        // },
         y: {
-          beginAtZero: true,
-        },
+          beginAtZero: true
+        }
       },
     },
   });
 
   return (
     <>
-      <div className="ambient-temp">
-        <div className="ambient-temperature1"> AMBIENT TEMPERATURE</div>
+    <div className="ambient-temp">
+        <div className="ambient-temperature1"> AMBINT TEMPERATURE</div>
       </div>
-      <canvas id="myChart"></canvas>
+    
+    <div class="chart-parent">
+    <canvas id="myChart"></canvas>
+    </div>
+    
+
+      
+      
       <Navbar />
     </>
   );

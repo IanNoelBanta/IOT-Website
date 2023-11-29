@@ -24,3 +24,10 @@
     width: 491px;
     height: 61px;
   }
+
+  .chart-parent{
+    position: relative;
+    margin-left: 300px;
+    width: 80vw;
+    height: 70vh;
+ }
