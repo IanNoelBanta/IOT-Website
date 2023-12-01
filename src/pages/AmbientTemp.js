@@ -41,7 +41,7 @@ const AmbientTemp = () => {
   return (
     <>
     <div className="ambient-temp">
-        <div className="ambient-temperature1"> AMBINT TEMPERATURE</div>
+        <div className="ambient-temperature1"> AMBIENT TEMPERATURE</div>
       </div>
     
     <div class="chart-parent">

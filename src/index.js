@@ -12,6 +12,7 @@ import Rainfall from "../src/pages/Rainfall";
 import LandingPage from "../src/pages/LandingPage";
 import PollutionParameters from "../src/pages/PollutionParameters";
 import Login from "../src/pages/Login";
+import SignUp from "../src/pages/SignUp";
 
 
 
@@ -71,6 +72,11 @@ const router = createBrowserRouter([
   {
     path: "/Login",
     element: <Login/>,
+  },
+
+  {
+    path: "/SignUp",
+    element: <SignUp/>,
   },
 
 ]);
