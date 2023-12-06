@@ -20,14 +20,17 @@
 }
 .welcome-parent {
     position: absolute;
-    top: 55px;
-    left: 33px;
-    height: 73px;
+    top: 65px;
+    left: 35px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     color: rgba(255, 255, 255, 0.75);
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    
 }
 /* .home {
     position: relative;
@@ -38,22 +41,24 @@
     position: relative;
     margin-top: 5px;
     margin-left: 0px;
-    font-size: 30px;
+    font-size: 25px;
     color: rgba(255, 255, 255, 0.75);
+    font-family: 'Poppins', sans-serif;
 }
 
 .dashboard {
     position: absolute;
-    top: calc(50% - 66px);
+    top: 20px;
     left: 33px;
     font-size: var(--font-size-base);
-    color: rgba(255, 255, 255, 0.33);
+    color: #F5F5F5;
+    font-family: 'Poppins', sans-serif; 
 }
 .the-map-showcases {
     position: absolute;
     top: 270px;
     left: 320px;
-    font-size: var(--font-size-base);
+    font-family: 'Poppins', sans-serif; 
     color: rgba(6, 5, 5, 0.75);
 }
 
@@ -274,10 +279,11 @@
 
 
 .card2 .card-heading{
-    color: rgba(255, 255, 255, 0.33);
+    color: #F5F5F5;
     margin-top: 15px;
     margin-left: 15px;
-    font-size: 20px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif; 
     
 }
 

@@ -9,60 +9,60 @@ function Navbar() {
         <div className="frame-group">
           <div className="dashboard-parent">
             <img className="dashboard-icon" alt="" src="/dashboard.svg" />
-            <Link to="/DashboardHome">
+            <Link to="/DashboardHome" style={{ textDecoration: 'none' }}>
               <div className="labels">Home</div>
             </Link>
           </div>
 
           <div className="dashboard-parent">
             <img
-              className="dashboard-icon"
+              className="dashboard-iconn"
               alt=""
               src="/thermostat-black-24dp-2.svg"
             />
-            <Link to="/AmbientTemp">
+            <Link to="/AmbientTemp" style={{ textDecoration: 'none' }}>
               <div className="labels">Ambient Temperature</div>
             </Link>
           </div>
 
           <div className="dashboard-parent">
             <img className="dashboard-icon" alt="" src="/cash.svg" />
-            <Link to="/SurfaceTemperature">
+            <Link to="/SurfaceTemperature" style={{ textDecoration: 'none' }}>
               <div className="labels">Surface Temperature</div>
             </Link>
           </div>
 
           <div className="dashboard-parent">
             <img className="dashboard-icon" alt="" src="/cash1.svg" />
-            <Link to="/RelativeHumidity">
+            <Link to="/RelativeHumidity" style={{ textDecoration: 'none' }}>
               <div className="labels">Relative Humidity</div>
             </Link>
           </div>
 
           <div className="dashboard-parent">
             <img className="dashboard-icon" alt="" src="/cash2.svg" />
-            <Link to="/WindSpeedDirection">
+            <Link to="/WindSpeedDirection" style={{ textDecoration: 'none' }}>
               <div className="labels">Wind Speed/Direction</div>
             </Link>
           </div>
 
           <div className="dashboard-parent">
             <img className="dashboard-icon" alt="" src="/cash3.svg" />
-            <Link to="/SolarIrradiance">
+            <Link to="/SolarIrradiance" style={{ textDecoration: 'none' }}>
               <div className="labels">Solar Irradiance</div>
             </Link>
           </div>
 
           <div className="dashboard-parent">
             <img className="dashboard-icon" alt="" src="/cloudy-snowing-black-24dp-2.svg" />
-            <Link to="/Rainfall">
+            <Link to="/Rainfall" style={{ textDecoration: 'none' }}>
               <div className="labels">Rainfall</div>
             </Link>
           </div>
 
           <div className="dashboard-parent">
             <img className="dashboard-icon" alt="" src="/location-city-black-24dp-2.svg" />
-            <Link to="/PollutionParameters">
+            <Link to="/PollutionParameters" style={{ textDecoration: 'none' }}>
               <div className="labels">Pollution Parameters</div>
             </Link>
           </div>

@@ -10,6 +10,7 @@
     justify-content: center;
     width: 491px;
     height: 61px;
+    font-family: 'Poppins', sans-serif;
   }
   .surface-temperature {
     position: relative;
@@ -20,6 +21,6 @@
     text-align: center;
     font-size: var(--font-size-smi);
     color: var(--color-gray);
-    font-family: var(--font-poppins);
+    
   }
   

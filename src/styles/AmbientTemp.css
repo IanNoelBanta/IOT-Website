@@ -23,6 +23,7 @@
     justify-content: center;
     width: 491px;
     height: 61px;
+    font-family: 'Poppins', sans-serif; 
   }
 
   .chart-parent{
