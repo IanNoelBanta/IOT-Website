@@ -61,6 +61,10 @@ const Login = () => {
       });
   };
 
+  const redirectToSignUp = () => {
+    navigate("/SignUp");
+  }
+
 
 
 
@@ -86,7 +90,7 @@ const Login = () => {
           <span className="span">{` `}</span>
         </span>
         <span className="span">
-          <span className="register1">Register</span>
+          <button className="register1" onClick={redirectToSignUp}>Register</button>
         </span>
       </div>
       <p>
