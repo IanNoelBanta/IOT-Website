@@ -81,8 +81,8 @@ const Login = () => {
       <div className="welcome-back">Welcome Back!</div>
       <div className="e-mail">E-mail</div>
       <div className="password">Password</div>
-      <input className="placeholder" name="Email" id="Email" type="text" onChange={handleEmailChange} value={userEmail}/>
-      <input className="placeholder1" name="Pass" id="Pass" type="text" onChange={handlePasswordChange} value={userPassword}/>
+      <input className="placeholder" name="Email" id="Email" type="text" placeholder="Enter your email" onChange={handleEmailChange} value={userEmail}/>
+      <input className="placeholder1" name="Pass" id="Pass" type="text" placeholder="Enter your password" onChange={handlePasswordChange} value={userPassword}/>
       <button className="login-button" onClick={handleSubmitLogin}>Login</button >
       <div className="dont-have-and-container">
         <span>
@@ -93,7 +93,8 @@ const Login = () => {
           <button className="register1" onClick={redirectToSignUp}>Register</button>
         </span>
       </div>
-      <p>
+      
+      <p class="hidden">
         {userEmail} {userPassword}
       </p>
     </div>

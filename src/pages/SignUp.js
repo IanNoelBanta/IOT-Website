@@ -1,4 +1,5 @@
 // import "./SignUp.css";
+import { Link } from "react-router-dom";
 import "../styles/SignUp.css";
 import { useState } from "react";
 
@@ -77,16 +78,16 @@ const SignUp = () => {
       <div className="name">
         <p className="name1">Name</p>
       </div>
-      <input className="placeholder" type="text" name="name" id="name" onChange={handleNameChange} value={userName}/>
-      <input className="placeholder1" type="text" name="Email" id="Email" onChange={handleEmailChange} value={userEmail}/>
-      <input className="placeholder2" type="text" name="Pass" id="Pass" onChange={handlePasswordChange} value={userPassword}/>
+      <input className="placeholder" type="text" name="name" id="name" placeholder="Enter your name" onChange={handleNameChange} value={userName}/>
+      <input className="placeholder1" type="text" name="Email" id="Email" placeholder="Enter your email" onChange={handleEmailChange} value={userEmail}/>
+      <input className="placeholder2" type="text" name="Pass" id="Pass" placeholder="Enter your password" onChange={handlePasswordChange} value={userPassword}/>
       <div className="password">Password</div>
       <div className="already-have-an">Already have an account?</div>
-      <button className="sign-in">Sign In</button>
-      <div className="sign-up-child" />
+      <Link to="/Login"><button className="sign-in">Sign In</button></Link>
+      {/* <div className="sign-up-child" /> */}
       <button className="create-an-account" onClick={handleRegister}>Create An Account</button>
-      <img className="rectangle-icon" alt="" src="/rectangle@2x.png" />
-      <img className="saly-1-icon" alt="" src="/saly1@2x.png" />
+      {/* <img className="rectangle-icon" alt="" src="/rectangle@2x.png" /> */}
+      {/* <img className="saly-1-icon" alt="" src="/saly1@2x.png" /> */}
     </div>
   );
 };

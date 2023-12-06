@@ -36,10 +36,12 @@
 .welcome-back {
   position: absolute;
   display: inline-block;
+  margin-left: 800px;
+  
 }
 .welcome-back {
   top: 100px;
-  left: 846px;
+  left: 69px;
   font-size: 48px;
   font-weight: 600;
   width: 391px;
@@ -57,28 +59,15 @@
 .password {
   top: 373px;
 }
-.placeholder,
+
 .placeholder1 {
-  border: 1px solid var(--color-gainsboro);
-  background-color: var(--color-gray);
-  position: absolute;
-  top: 290px;
-  left: 788px;
-  border-radius: var(--br-6xl);
-  box-sizing: border-box;
-  width: 574px;
-  height: 54px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-3xl) var(--padding-23xl);
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
+  margin-top: 100px;
+  margin-left: 800px;
 }
-.placeholder1 {
-  top: 410px;
+
+.placeholder {
+  margin-top: -100px;
+  margin-left: 800px;
 }
 .login-item {
   position: absolute;
@@ -126,4 +115,8 @@
   color: var(--color-black);
   font-family: var(--font-poppins);
   box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
 }

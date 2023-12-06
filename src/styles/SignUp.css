@@ -50,6 +50,29 @@
   width: 628px;
   height: 43px;
 }
+/* .placeholder{
+  width: 400px;
+  height: 20px;
+  border-style: solid;
+  border-radius: 9px;
+  margin-top
+}
+
+.placeholder1{
+  width: 400px;
+  height: 20px;
+  border-radius: 9px;
+  border-style: solid;
+}
+
+.placeholder2{
+  width: 400px;
+  height: 20px;
+  border-radius: 9px;
+  border-style: solid;
+
+} */
+
 .placeholder,
 .placeholder1,
 .placeholder2 {
@@ -75,6 +98,7 @@
 .placeholder2 {
   top: 280px;
 }
+
 .already-have-an,
 .password,
 .sign-in {
@@ -94,8 +118,8 @@
   height: 37px;
 }
 .sign-in {
-  top: 675px;
-  left: 75px;
+  top: 671px;
+  
   width: 500px;
   height: 37px;
   cursor: pointer;
@@ -103,7 +127,7 @@
   border: 0;
   padding: 0;
   background-color: transparent;
-  left: 310px;
+  left: 260px;
   font-weight: 600;
   font-family: var(--font-poppins);
   color: #8700b6;
@@ -121,14 +145,18 @@
 }
 .create-an-account {
   position: absolute;
-  top: 575px;
-  left: 320px;
+  top: 570px;
+  left: 217px;
   font-size: 20px;
   font-weight: 500;
-  color: var(--color-white);
+  
+  color: whitesmoke;
   display: inline-block;
-  width: 281px;
-  height: 43px;
+  border-radius: 25px;
+  border-color: #925fe2; 
+  background-color: #925fe2;
+  width: 390px;
+  height: 40px;
 }
 .rectangle-icon,
 .saly-1-icon {

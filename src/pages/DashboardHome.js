@@ -40,7 +40,7 @@ const DashboardHome = () => {
      
 
     
-      <Navbar></Navbar>
+      
 
       
       <div class="weather-condition">
@@ -99,7 +99,7 @@ const DashboardHome = () => {
       </div>
     
     </div>
-
+    <Navbar/>
 
     <div class="temp1">
     <div class="card2">

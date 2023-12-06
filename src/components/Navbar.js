@@ -80,8 +80,7 @@ function Navbar() {
         <div className="rectangle-wrapper">
           <div className="frame-child" />
         </div>
-        <img
-          className="cloudy-climes-high-resolution-icon"
+        <img className="cloudy"
           alt=""
           src="/cloudyclimeshighresolutionlogoblacktransparent-1@2x.png"
         />
