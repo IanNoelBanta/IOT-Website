@@ -1,42 +1,51 @@
+import Chart from 'chart.js/auto';
+import { useEffect } from 'react';
 import Navbar from "../components/Navbar";
 import "../styles/AmbientTemp.css";
-import Chart from 'chart.js/auto';
+
 
 const AmbientTemp = () => {
   
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  useEffect(() => {
+    const ctx = document.getElementById('myChart');
 
-  const ctx = document.getElementById("myChart");
+    const handleResize = () => {
+      if (ctx) {
+        myChart.resize();
+      }
+    };
 
-  const handleResize = (myChart) => {
-    myChart.resize();
-    }
-  new Chart(ctx, {
-    type: "line",
-    data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-      datasets: [
-        {
-          label: "# of Votes",
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1,
-        },
-      ],
-    },
-    options: {
-      responsive: true,
-      onResize: handleResize,
-      maintainAspectRatio: false,
-      scales: {
-        // x: {
-        //   max: 69
-        // },
-        y: {
-          beginAtZero: true
-        }
+    const myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow'],
+        datasets: [
+          {
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            borderWidth: 1,
+          },
+        ],
       },
-    },
-  });
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: false,
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      },
+    });
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      myChart.destroy();
+    };
+  }, []);
 
   return (
     <>
