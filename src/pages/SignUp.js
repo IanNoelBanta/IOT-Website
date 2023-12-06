@@ -86,8 +86,8 @@ const SignUp = () => {
       <Link to="/Login"><button className="sign-in">Sign In</button></Link>
       {/* <div className="sign-up-child" /> */}
       <button className="create-an-account" onClick={handleRegister}>Create An Account</button>
-      {/* <img className="rectangle-icon" alt="" src="/rectangle@2x.png" /> */}
-      {/* <img className="saly-1-icon" alt="" src="/saly1@2x.png" /> */}
+       <img className="rectangle-icon" alt="" src="/rectangle@2x.png" /> 
+       <img className="saly-1-icon" alt="" src="/saly1@2x.png" /> 
     </div>
   );
 };

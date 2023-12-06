@@ -32,7 +32,7 @@
 }
 .e-mail {
   top: 350px;
-  left: 90px;
+  left: -709px;
   width: 628px;
   height: 43px;
   font-size: 17px;
@@ -50,12 +50,16 @@
   width: 628px;
   height: 43px;
 }
-/* .placeholder{
+
+.placeholder{
   width: 400px;
   height: 20px;
   border-style: solid;
   border-radius: 9px;
-  margin-top
+  position: absolute;
+  top: 380px;
+  left: -709px;
+  
 }
 
 .placeholder1{
@@ -63,6 +67,9 @@
   height: 20px;
   border-radius: 9px;
   border-style: solid;
+  position: absolute;
+  top: 280px;
+  left: -709px;
 }
 
 .placeholder2{
@@ -70,10 +77,13 @@
   height: 20px;
   border-radius: 9px;
   border-style: solid;
+  top: 480px;
+  left: 89px;
+  position: absolute;
 
-} */
+}
 
-.placeholder,
+/* .placeholder,
 .placeholder1,
 .placeholder2 {
   border: 2px solid var(--color-gainsboro);
@@ -97,14 +107,14 @@
 }
 .placeholder2 {
   top: 280px;
-}
+} */
 
 .already-have-an,
 .password,
 .sign-in {
   position: absolute;
   top: 450px;
-  left: 90px;
+  left: -709px;
   font-weight: 500;
   font-size: 17px;
   display: inline-block;
@@ -149,7 +159,6 @@
   left: 217px;
   font-size: 20px;
   font-weight: 500;
-  
   color: whitesmoke;
   display: inline-block;
   border-radius: 25px;

@@ -79,10 +79,10 @@ const Login = () => {
         />
       </div>
       <div className="welcome-back">Welcome Back!</div>
-      <div className="e-mail">E-mail</div>
-      <div className="password">Password</div>
-      <input className="placeholder" name="Email" id="Email" type="text" placeholder="Enter your email" onChange={handleEmailChange} value={userEmail}/>
-      <input className="placeholder1" name="Pass" id="Pass" type="text" placeholder="Enter your password" onChange={handlePasswordChange} value={userPassword}/>
+      <div className="e-maill">E-mail</div>
+      <div className="passwordd">Password</div>
+      <input className="placeholderr" name="Email" id="Email" type="text" required onChange={handleEmailChange} value={userEmail}/>
+      <input className="placeholder11" name="Pass" id="Pass" type="password"  required onChange={handlePasswordChange} value={userPassword}/>
       <button className="login-button" onClick={handleSubmitLogin}>Login</button >
       <div className="dont-have-and-container">
         <span>
@@ -98,6 +98,8 @@ const Login = () => {
         {userEmail} {userPassword}
       </p>
     </div>
+
+    
   );
 };
 

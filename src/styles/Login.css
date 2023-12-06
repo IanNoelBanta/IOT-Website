@@ -31,6 +31,34 @@
   width: 661px;
   height: 628px;
 }
+
+.e-maill{
+  position: absolute;
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 100px;
+  top: 250px;
+  left: 789px;
+  font-weight: 500;
+  width: 628px;
+  height: 43px;
+  font-weight: bold;
+}
+
+.passwordd{
+
+  position: absolute;
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 200px;
+  top: 250px;
+  left: 789px;
+  font-weight: 500;
+  width: 628px;
+  height: 43px;
+  font-weight: bold;
+}
+
 .e-mail,
 .password,
 .welcome-back {
@@ -60,6 +88,29 @@
   top: 373px;
 }
 
+.placeholderr {
+  margin-top: 390px;
+  margin-left: 890px;
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  border-style: solid;
+  border-radius: 9px;
+  position: absolute;
+  
+}
+
+.placeholder11 {
+  margin-top: 490px;
+  margin-left: 890px;
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  border-style: solid;
+  border-radius: 9px;
+  position: absolute;
+}
+
 .placeholder1 {
   margin-top: 100px;
   margin-left: 800px;
@@ -78,14 +129,29 @@
   width: 390px;
   height: 75px;
 }
-.login-button {
+/* .login-button {
   position: absolute;
-  top: 515px;
+  top: 550px;
   left: 1028px;
   font-size: 12px;
   font-weight: 500;
   color: var(--color-white);
   display: inline-block;
+  width: 60px;
+  height: 30px;
+} */
+
+.login-button{
+  position: absolute;
+  top: 550px;
+  left: 1028px;
+  font-size: 12px;
+  font-weight: 500;
+  color: whitesmoke;
+  display: inline-block;
+  border-radius: 25px;
+  border-color: #925fe2; 
+  background-color: #925fe2;
   width: 60px;
   height: 30px;
 }
@@ -94,6 +160,18 @@
 }
 .register1 {
   font-weight: 500;
+  top: 550px;
+  left: 1028px;
+  font-size: 12px;
+  font-weight: 500;
+  color: whitesmoke;
+  display: inline-block;
+  border-radius: 25px;
+  border-color: #925fe2; 
+  background-color: #925fe2;
+  width: 60px;
+  height: 30px;
+  
 }
 .dont-have-and-container {
   position: absolute;
