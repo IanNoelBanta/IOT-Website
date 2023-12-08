@@ -19,20 +19,19 @@ const DashboardHome = () => {
         playsInline
         className="back-video"
         alt=""
-        src="/MovingClouds.mp4"
+        src="/Clouds.mp4"
       ></video>
 
       <div className="frame-container">
         <div className="welcome-parent">
           <div className="home">Welcome!</div>
           <div className="choose-a-parameter">
-            Choose a parameter from the sidebar to view detailed data or explore
-            the map below
+
           </div>
         </div>
         <div className="dashboard">Dashboard</div>
       </div>
-      <div className="the-map-showcases">The map showcases the specific location where AWS has been deployed.
+      <div className="the-map-showcases">
       </div>
 
       
@@ -47,9 +46,9 @@ const DashboardHome = () => {
       <div class="card2">
         <h3 class="card-heading">Today's Highlights</h3>
         <div class="content"><img
-              className="weather-png"
+              className="daily-png"
               alt=""
-              src="/weather.png"
+              src="/daily.png"
             />
             </div>
       </div>
@@ -88,9 +87,9 @@ const DashboardHome = () => {
         <h4 class="card-heading">Wind Direction</h4>
         <div class="content">
         <img
-              className="compass-png"
+              className="compsie-png"
               alt=""
-              src="/compass.png"
+              src="/compsie.png"
             />
             <div class="content-temp">
            <p class="value-index">0</p> 
@@ -107,9 +106,9 @@ const DashboardHome = () => {
         
 
          <img
-              className="thermometer-png"
+              className="therms-png"
               alt=""
-              src="/thermometer.png"
+              src="/therms.png"
             /> 
             <div class="content-temp">
            <p class="value-index">0</p> 
