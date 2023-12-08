@@ -132,19 +132,25 @@
     font-weight: 100;
     line-height: 1;
     margin-left:  100px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
     
     
 }
 
 .temprature span{
     font-size: 35px;
-    margin-top:  10px;
+    margin-top:  4px;
     display: block;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .date-time{
     font-size: 15px;
     margin-left:  15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
     
 }
 
@@ -155,6 +161,8 @@
     font-size: 15px;
     margin-left:  15px;
     text-transform: capitalize;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .condition-rain div{
@@ -192,6 +200,8 @@
     text-align: center;
     font-size: 30px;
     margin-top: -15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .compsie-png{
@@ -320,4 +330,6 @@
 .card2 .content p:first-child{
     text-align: center;
     font-size: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }

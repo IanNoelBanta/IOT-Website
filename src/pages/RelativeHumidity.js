@@ -48,7 +48,7 @@ const RelativeHumidity = () => {
   return (
     <>
     <div className="relative-humidity">
-    <div className="relative-humidity2">RELATIVEss HUMIDITY</div>
+    <div className="relative-humidity2">RELATIVE HUMIDITY</div>
     </div>
     <div class="chart-parent">
     <canvas id="myChart"></canvas>
