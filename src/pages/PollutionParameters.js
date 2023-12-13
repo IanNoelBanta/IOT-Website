@@ -1,61 +1,49 @@
-import Navbar from "../components/Navbar";
-import "../styles/PollutionParameters.css";
-import Chart from 'chart.js/auto';
-import { useEffect } from 'react';
+// AmbientTemp.js
+import React, { useState, useEffect } from 'react';
+import LineChart from '../components/LineChart';
+import { UserData } from '../components/Data';
+import Navbar from '../components/Navbar';
+import '../styles/PollutionParameters.css'; // Import AmbientTemp.css
 
-const PollutionParameters = () => {
+function PollutionParameters() {
+  const [userData, setUserData] = useState();
+
   useEffect(() => {
-    const ctx = document.getElementById('myChart');
-
-    const handleResize = () => {
-      if (ctx) {
-        myChart.resize();
-      }
-    };
-
-    const myChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ['Red', 'Blue', 'Yellow'],
-        datasets: [
-          {
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: false,
-        scales: {
-          y: {
-            beginAtZero: true,
-          },
+    // Process your data if needed
+    setUserData({
+      labels: UserData.map((item) => item.year),
+      datasets: [
+        {
+          label: 'Users Gained',
+          data: UserData.map((item) => item.userGain),
+          backgroundColor: [
+            'rgba(75,192,192,1)',
+            '#ecf0f1',
+            '#50AF95',
+            '#f3ba2f',
+            '#2a71d0',
+          ],
+          borderColor: 'black',
+          borderWidth: 2,
         },
-      },
+      ],
     });
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      myChart.destroy();
-    };
   }, []);
-  
+
   return (
     <>
-    <div className="solar-irradiance">
-    <div className="pollution-parameters1">POLLUTION PARAMETERS</div>
-    </div>
-    <div class="chart-parent">
-    <canvas id="myChart"></canvas>
-    </div>
-      <Navbar/>
+      <div className="PollutionParameters">
+        <div className="chart-container">
+          {userData ? (
+            <LineChart chartData={userData} />
+          ) : (
+            <p>Loading data...</p>
+          )}
+        </div>
+      </div>
+      <Navbar />
     </>
   );
-};
+}
 
 export default PollutionParameters;

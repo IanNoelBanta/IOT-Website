@@ -1,68 +1,49 @@
-import Chart from 'chart.js/auto';
-import { useEffect } from 'react';
-import Navbar from "../components/Navbar";
-import "../styles/AmbientTemp.css";
+// AmbientTemp.js
+import React, { useState, useEffect } from 'react';
+import LineChart from '../components/LineChart';
+import { UserData } from '../components/Data';
+import Navbar from '../components/Navbar';
+import '../styles/AmbientTemp.css'; // Import AmbientTemp.css
 
+function AmbientTemp() {
+  const [userData, setUserData] = useState();
 
-const AmbientTemp = () => {
-  
   useEffect(() => {
-    const ctx = document.getElementById('myChart');
-
-    const handleResize = () => {
-      if (ctx) {
-        myChart.resize();
-      }
-    };
-
-    const myChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ['Red', 'Blue', 'Yellow'],
-        datasets: [
-          {
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: false,
-        scales: {
-          y: {
-            beginAtZero: true,
-          },
+    // Process your data if needed
+    setUserData({
+      labels: UserData.map((item) => item.year),
+      datasets: [
+        {
+          label: 'Users Gained',
+          data: UserData.map((item) => item.userLost),
+          backgroundColor: [
+            'rgba(75,192,192,1)',
+            '#ecf0f1',
+            '#50AF95',
+            '#f3ba2f',
+            '#2a71d0',
+          ],
+          borderColor: 'black',
+          borderWidth: 2,
         },
-      },
+      ],
     });
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      myChart.destroy();
-    };
   }, []);
 
   return (
     <>
-    <div className="ambient-temp">
-        <div className="ambient-temperature1"> AMBIENT TEMPERATURE</div>
+      <div className="AmbientTemp">
+        <div className="chart-container">
+          {userData ? (
+            <LineChart chartData={userData} />
+          ) : (
+            <p>Loading data...</p>
+          )}
+        </div>
       </div>
-    
-    <div class="chart-parent">
-    <canvas id="myChart"></canvas>
-    </div>
-    
-
-      
-      
       <Navbar />
     </>
   );
-};
+}
 
 export default AmbientTemp;
