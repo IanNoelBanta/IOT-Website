@@ -35,13 +35,6 @@ const DashboardHome = () => {
       </div>
 
       
-
-     
-
-    
-      
-
-      
       <div class="weather-condition">
       <div class="card2">
         <h3 class="card-heading">Today's Highlights</h3>
