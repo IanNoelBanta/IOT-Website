@@ -28,7 +28,7 @@ function LineGraph({ name, data, labels, unit = "", dataLimit }) {
         data: data,
         backgroundColor: (context) => {
           const bgColor = [
-            "rgba(163, 136, 201, 0.8)", // Light violet
+            "rgba(163, 136, 201, 0.8)", 
             "rgba(146, 110, 190, 0.8)",
             "rgba(128, 84, 179, 0.8)",
             "rgba(111, 59, 168, 0.8)",

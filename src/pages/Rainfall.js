@@ -12,26 +12,13 @@ const Rainfall = () => {
   const value = sensor.map((entry) => entry.value);
   const filteredKey = cleanKeys(key, "HHMM", "12hour");
 
-  const dummyhr = [1, 2, 3, 4, 5];
-  const dummyhrlbl = ["a", "b", "c", "d", "e"];
-
-  const dummywk = [5, 4, 3, 2, 1];
-  const dummywklbl = ["e", "d", "c", "b", "a"];
-
   const isHourly = "Hourly";
   const isWeekly = "Weekly";
-
   const sensorWeekly = GetWeekly(sensorName);
-  const weeklyKey = sensorWeekly.map((entry) => entry.key);
+  const weeklyKey = sensorWeekly.map((entry) => entry.key).reverse();
   const weeklyValue = sensorWeekly.map((entry) => entry.value);
 
-  const [averageValue, lowestValue, highestValue] = GetLowHighAveData(value);
-
-  const [averageWeekly, lowestWeekly, highestWeekly] = GetLowHighAveData(weeklyValue);
-
-  const [chartData, setChartData] = useState(dummyhr);
   const [buttonText, setButtonText] = useState("Weekly");
-  const [chartLabel, setChartLabel] = useState(dummywklbl);
   const [shown, setShown] = useState(isHourly);
 
   const HandleToggle = () => {
@@ -43,6 +30,7 @@ const Rainfall = () => {
         : "Hourly"
     );
   };
+
 
   return (
     <>

@@ -15,12 +15,8 @@ const SolarIrradiance = () => {
   const isHourly = "Hourly";
   const isWeekly = "Weekly";
   const sensorWeekly = GetWeekly(sensorName);
-  const weeklyKey = sensorWeekly.map((entry) => entry.key);
+  const weeklyKey = sensorWeekly.map((entry) => entry.key).reverse();
   const weeklyValue = sensorWeekly.map((entry) => entry.value);
-
-  const [averageValue, lowestValue, highestValue] = GetLowHighAveData(value);
-
-  const [averageWeekly, lowestWeekly, highestWeekly] = GetLowHighAveData(weeklyValue);
 
   const [buttonText, setButtonText] = useState("Weekly");
   const [shown, setShown] = useState(isHourly);
@@ -34,6 +30,7 @@ const SolarIrradiance = () => {
         : "Hourly"
     );
   };
+
   return (
     <>
    <img className="background" alt="" src="/bg21.jpg" />
