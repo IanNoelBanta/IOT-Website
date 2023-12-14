@@ -1,10 +1,22 @@
 import Navbar from "../components/Navbar";
 import "../styles/DashboardHome.css";
 import React, { useState, useEffect } from "react";
+import { FetchData } from "../utils/FetchData.js"; // Import the FetchData hook
 
 const DashboardHome = () => {
 
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
+  
+  const temperatureData = FetchData("/mema"); 
+  const humidityData = FetchData("/mema"); 
+  const windDirectionData = FetchData("/mema"); 
+  const ambientTemperatureData = FetchData("/mema"); 
+  const relativeHumidityData = FetchData("/mema"); 
+  const surfaceTemperatureData = FetchData("/mema"); 
+  const rainfallData = FetchData("/mema"); 
+  const solarIrradianceData = FetchData("/mema"); 
+  const windSpeedData = FetchData("/mema"); 
+  const pollutionParametersData = FetchData("/mema"); 
 
   useEffect(() => {
     // Update the current date-time every second
@@ -60,7 +72,7 @@ const DashboardHome = () => {
       </div>
 
        <div class="temprature">
-        <h1 id="temp">0</h1>
+        <h1 id="temp">{temperatureData[0]?.value || 0}</h1>
         <span class="temp-unit">°C</span>
       </div> 
 
@@ -86,7 +98,7 @@ const DashboardHome = () => {
               src="/compsie.png"
             />
             <div class="content-temp">
-           <p class="value-index">0</p> 
+           <p class="value-index">{windDirectionData[0]?.value || 0}</p> 
           </div>
         </div>
       </div>
@@ -105,7 +117,7 @@ const DashboardHome = () => {
               src="/therms.png"
             /> 
             <div class="content-temp">
-           <p class="value-index">0</p> 
+           <p class="value-index">{ambientTemperatureData[0]?.value || 0}</p> 
            </div>
         
       </div>
@@ -116,7 +128,7 @@ const DashboardHome = () => {
       <div class="card2">
         <h4 class="card-heading">Relative Humidity</h4>
         <div class="content">
-          <p class="value-index">0</p>
+          <p class="value-index">{relativeHumidityData[0]?.value || 0}</p>
         </div>
       </div>
     
@@ -126,7 +138,7 @@ const DashboardHome = () => {
     <div class="card2">
         <h4 class="card-heading">Surface Temperature</h4>
         <div class="content">
-          <p class="value-index">0</p>
+          <p class="value-index">{surfaceTemperatureData[0]?.value || 0}</p>
         </div>
       </div>
     
@@ -136,7 +148,7 @@ const DashboardHome = () => {
     <div class="card2">
         <h4 class="card-heading">Rainfall</h4>
         <div class="content">
-          <p class="value-index">0</p>
+          <p class="value-index">{rainfallData[0]?.value || 0}</p>
         </div>
       </div>
     
@@ -146,7 +158,7 @@ const DashboardHome = () => {
     <div class="card2">
         <h4 class="card-heading">Solar Irradiance</h4>
         <div class="content">
-          <p class="value-index">0</p>
+          <p class="value-index">{solarIrradianceData[0]?.value || 0}</p>
         </div>
       </div>
     
@@ -156,7 +168,7 @@ const DashboardHome = () => {
     <div class="card2">
         <h4 class="card-heading">Wind Speed</h4>
         <div class="content">
-          <p class="value-index">0</p>
+          <p class="value-index">{windSpeedData[0]?.value || 0}</p>
         </div>
       </div>
     
@@ -166,7 +178,7 @@ const DashboardHome = () => {
     <div class="card2">
         <h4 class="card-heading">Pollution Parameters</h4>
         <div class="content">
-          <p class="value-index">0</p>
+          <p class="value-index">{pollutionParametersData[0]?.value || 0}</p>
         </div>
       </div>
 
