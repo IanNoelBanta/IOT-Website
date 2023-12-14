@@ -1,3 +1,32 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.background{
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  object-fit: fill;
+
+}
+
+.shown{
+  position: absolute;
+  top: 100px;
+  left: 1000px;
+  font-size: 37px;
+  font-weight: 600;
+  color: #925fe2;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 491px;
+  height: 61px;
+  font-family: 'Poppins', sans-serif; 
+
+}
+
 .relative-humidity2 {
   position: absolute;
   top: 165px;

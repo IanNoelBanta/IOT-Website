@@ -53,7 +53,7 @@ function LineGraph({ name, data, labels, unit = "", dataLimit }) {
 
           return gradientBg;
         },
-        borderColor: "violet",
+        borderColor: "white",
         borderWidth: 5,
         pointBorderColor: "black",
         pointBorderWidth: 4,

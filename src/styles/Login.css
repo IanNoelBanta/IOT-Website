@@ -1,8 +1,15 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .background {
-  position: relative;
+  position: absolute;
   width: 1920px;
   height: 1080px;
-  object-fit: fill;
+  object-fit: cover;
+  overflow: hidden
 }
 
 .middle-box {
@@ -10,11 +17,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 430px; /* Adjust the width as needed */
-  height: 377px; /* Adjust the height as needed */
-  background-color: rgba(214, 71, 71, 0.4); /* Adjust the RGB values and opacity as needed */
-  padding: 20px; /* Add padding as needed */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  width: 430px; 
+  height: 377px; 
+  background-color: rgba(214, 71, 71, 0.4); 
+  padding: 20px; 
+  box-sizing: border-box; 
 }
 
   
@@ -24,8 +31,8 @@
   left: 50px;
   font-weight: 500;
   font-size: 25px;
-  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
-  color: #ffffff; /* Set the desired text color */
+  font-family: 'Poppins', sans-serif; 
+  color: #ffffff; 
 
 }
 
@@ -37,8 +44,8 @@
   left: 50px;
   font-weight: 500;
   font-size: 25px;
-  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
-  color: rgb(255, 255, 255); /* Set the text color to match the border and background color */
+  font-family: 'Poppins', sans-serif; 
+  color: rgb(255, 255, 255); 
 }
 
 .placeholderr {
@@ -51,12 +58,12 @@
   padding: 10px;
   background-color: transparent;
   font-family: 'Poppins', sans-serif;
-  color: rgba(0, 0, 0, 0.7); /* Red color with 70% opacity */
+  color: rgba(0, 0, 0, 0.7); 
 }
 
 .placeholderr:hover {
-  background-color: #7e1111; /* Change background color on hover */
-  color: #fff; /* Chrgb(173, 24, 24)xt color on hover */
+  background-color: #7e1111; 
+  color: #fff; 
 }
 
 .placeholder11 {
@@ -69,33 +76,33 @@
   padding: 10px;
   background-color: transparent;
   font-family: 'Poppins', sans-serif;
-  color: rgba(0, 0, 0, 0.7); /* Red color with 70% opacity */
+  color: rgba(0, 0, 0, 0.7); 
 }
 
 .placeholder11:hover {
-  background-color: #7e1111; /* Change background color on hover */
-  color: #fff; /* Chrgb(173, 24, 24)xt color on hover */
+  background-color: #7e1111; 
+  color: #fff; 
 }
 
 .login-button {
   position: absolute;
   top: 230px;
   left: 140px;
-  font-size: 18px; /* Adjust the font size as needed */
+  font-size: 18px;
   font-weight: 500;
-  color: #ffffff; /* Set the text color to match the border and background color */
+  color: #ffffff; 
   display: inline-block;
-  border-radius: 20px; /* Adjust the border-radius for a softer look */
-  border: 1px solid #ff0000; /* Set a border with the same color as the background */
-  background-color: transparent; /* Set the background color to transparent */
-  padding: 10px 50px; /* Adjust padding for better button dimensions */
-  cursor: pointer; /* Add a pointer cursor for better usability */
-  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+  border-radius: 20px; 
+  border: 1px solid #ff0000; 
+  background-color: transparent; 
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; 
 }
 
 .login-button:hover {
-  background-color: #ee4545; /* Change background color on hover */
-  color: #fff; /* Change text color on hover */
+  background-color: #ee4545; 
+  color: #fff; 
 }
 .span {
   color: var(--color-mediumslateblue);
@@ -107,19 +114,19 @@
   left: 50px;
   font-weight: 500;
   font-size: 12px;
-  color: rgb(255, 255, 255); /* Set the text color to match the border and background color */
+  color: rgb(255, 255, 255); 
   display: inline-block;
-  border-radius: 10px; /* Adjust the border-radius for a softer look */
-  border: 1px solid #ff0000; /* Set a border with the same color as the background */
-  background-color: transparent; /* Set the background color to transparent */
-  padding: 3px 10px; /* Adjust padding for better button dimensions */
-  cursor: pointer; /* Add a pointer cursor for better usability */
-  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+  border-radius: 10px; 
+  border: 1px solid #ff0000; 
+  background-color: transparent; 
+  padding: 3px 10px;
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
 }
 
 .register1:hover {
-  background-color: #ee4545; /* Change background color on hover */
-  color: #ffffff; /* Change text color on hover */
+  background-color: #ee4545; 
+  color: #ffffff;
 }
 
 .dont-have-and-container {
@@ -129,7 +136,7 @@
   display: inline-block;
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
-  color: rgba(255, 255, 255, 0.7); /* Red color with 70% opacity */
+  color: rgba(255, 255, 255, 0.7); 
 }
 
 .login {

@@ -11,8 +11,7 @@ export const FetchData = (path) => {
     const handleDataChange = (snapshot) => {
       if (snapshot.exists()) {
         setData(
-          Object.entries(snapshot.val()).map(([key, value]) => ({ key, value }))
-        );
+          Object.entries(snapshot.val()).map(([key, value]) => ({ key, value })) .reverse());
       } else {
         console.log("No data available");
         setData([]);

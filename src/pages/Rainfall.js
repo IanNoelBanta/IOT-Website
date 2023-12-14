@@ -6,7 +6,7 @@ import LineGraph from "../components/Graph.js";
 import { useEffect, useState } from "react";
 
 const Rainfall = () => {
-  const sensorName = "Rainfall";
+  const sensorName = "mema";
   const sensor = FetchData(sensorName);
   const key = sensor.map((entry) => entry.key);
   const value = sensor.map((entry) => entry.value);
@@ -21,8 +21,6 @@ const Rainfall = () => {
   const isHourly = "Hourly";
   const isWeekly = "Weekly";
 
-
-
   const sensorWeekly = GetWeekly(sensorName);
   const weeklyKey = sensorWeekly.map((entry) => entry.key);
   const weeklyValue = sensorWeekly.map((entry) => entry.value);
@@ -36,11 +34,8 @@ const Rainfall = () => {
   const [chartLabel, setChartLabel] = useState(dummywklbl);
   const [shown, setShown] = useState(isHourly);
 
-  const handleToggle = () => {
-    setChartData((prevData) => (prevData === dummyhr ? dummywk : dummyhr));
-    setChartLabel((prevData) => (prevData === dummywklbl ? dummyhrlbl : dummywklbl));
+  const HandleToggle = () => {
     setShown((prevData) => (prevData === isHourly ? isWeekly : isHourly));
-
 
     setButtonText((prevText) =>
       prevText === "Hourly"
@@ -57,12 +52,12 @@ const Rainfall = () => {
     <>{shown}</>
       </div>
       <div className="graph">
-        <button onClick={handleToggle}>{buttonText}</button>
-        <LineGraph data={chartData} labels={chartLabel} />
+        <button onClick={HandleToggle}>{buttonText}</button>
+      <LineGraph data={shown === isHourly ? value : weeklyValue} labels={shown === isHourly ? filteredKey : weeklyKey} />
+
       </div>
       <Navbar />
     </>
   );
 };
-
 export default Rainfall;
