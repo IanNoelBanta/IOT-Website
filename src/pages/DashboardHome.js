@@ -1,26 +1,9 @@
 import Navbar from "../components/Navbar";
 import "../styles/DashboardHome.css";
-// import firebaseConfig from "../utils/FirebaseConfig"
-
-// import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-// import { initializeApp } from "firebase/app";
-
-// const app = initializeApp(firebaseConfig);
 
 const DashboardHome = () => {
   return (
     <>
-
-
-
-      {/* <video
-        autoPlay
-        loop
-        playsInline
-        className="back-video"
-        alt=""
-        src="/Clouds.mp4"
-      ></video> */}
      <img className="dhbg" alt="" src="/bg4.jpg" />
       <div className="frame-container">
         <div className="welcome-parent">
@@ -69,10 +52,6 @@ const DashboardHome = () => {
         </div>
       </div> 
 
-
-
-
-      
     </div>
 
     <div class="wind-speed-direction">
@@ -176,47 +155,5 @@ const DashboardHome = () => {
   );
 };
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const temp = document.getElementById("temp");
-//   const date = document.getElementById("date-time");
-//   let currentCity = "";
-//   let currentUnit = "";
-//   let hourlyorWeek = "Week";
-
-//   function getDateTime() {
-//     let now = new Date(),
-//       hour = now.getHours(),
-//       minute = now.getMinutes();
-
-//     let days = [
-//       "Sunday",
-//       "Monday",
-//       "Tuesday",
-//       "Wednesday",
-//       "Thursday",
-//       "Friday",
-//       "Saturday",
-//     ];
-
-//     hour = hour % 12;
-//     if (hour < 10) {
-//       hour = "0" + hour;
-//     }
-
-//     if (minute < 10) {
-//       minute = "0" + minute;
-//     }
-
-//     let dayString = days[now.getDay()];
-//     return `${dayString}, ${hour}:${minute}`;
-//   }
-
-//   date.innerText = getDateTime();
-
-//   setInterval(() => {
-//     date.innerText = getDateTime();
-//   }, 1000);
-// });
-    
 export default DashboardHome;
 

@@ -24,8 +24,8 @@
   left: 46.5%;
   font-weight: 500;
   font-size: 30px;
-  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
-  color: #ffffff; /* Set the desired text color */
+  font-family: 'Poppins', sans-serif; 
+  color: #ffffff; 
 }
 
 
@@ -35,8 +35,8 @@
   left: 41%;
   font-weight: 500;
   font-size: 20px;
-  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
-  color: #ffffff; /* Set the desired text color */
+  font-family: 'Poppins', sans-serif; 
+  color: #ffffff;
 }
 
 .name1 {
@@ -45,8 +45,8 @@
   left: 41%;
   font-weight: 500;
   font-size: 20px;
-  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
-  color: #ffffff; /* Set the desired text color */
+  font-family: 'Poppins', sans-serif; 
+  color: #ffffff; 
 }
 
 
@@ -56,8 +56,8 @@
   left: 41%;
   font-weight: 500;
   font-size: 20px;
-  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
-  color: #ffffff; /* Set the desired text color */
+  font-family: 'Poppins', sans-serif; 
+  color: #ffffff; 
 }
 
 .placeholder {
@@ -70,12 +70,12 @@
   padding: 10px;
   background-color: transparent;
   font-family: 'Poppins', sans-serif;
-  color: rgba(0, 0, 0, 0.7); /* Red color with 70% opacity */
+  color: rgba(0, 0, 0, 0.7); 
 }
 
 .placeholder:hover {
-  background-color: #7e1111; /* Change background color on hover */
-  color: #fff; /* Chrgb(173, 24, 24)xt color on hover */
+  background-color: #7e1111; 
+  color: #fff;
 }
 
 .placeholder1 {
@@ -88,12 +88,12 @@
   padding: 10px;
   background-color: transparent;
   font-family: 'Poppins', sans-serif;
-  color: rgba(0, 0, 0, 0.7); /* Red color with 70% opacity */
+  color: rgba(0, 0, 0, 0.7); 
 }
 
 .placeholder1:hover {
-  background-color: #7e1111; /* Change background color on hover */
-  color: #fff; /* Chrgb(173, 24, 24)xt color on hover */
+  background-color: #7e1111;
+  color: #fff; 
 }
 
 .placeholder2 {
@@ -106,12 +106,12 @@
   padding: 10px;
   background-color: transparent;
   font-family: 'Poppins', sans-serif;
-  color: rgba(0, 0, 0, 0.7); /* Red color with 70% opacity */
+  color: rgba(0, 0, 0, 0.7); 
 }
 
 .placeholder2:hover {
-  background-color: #7e1111; /* Change background color on hover */
-  color: #fff; /* Chrgb(173, 24, 24)xt color on hover */
+  background-color: #7e1111; 
+  color: #fff; 
 }
 
 .already-have-an {
@@ -120,8 +120,8 @@
   left: 44.5%;
   font-weight: 500;
   font-size: 15px;
-  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
-  color: #ffffff; /* Set the desired text color */
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff; 
 }
 
 .sign-in {
@@ -129,38 +129,38 @@
   top: 660px;
   left: 46%;
   font-weight: 500;
-  color: #ffffff; /* Set the text color to match the border and background color */
+  color: #ffffff;
   display: inline-block;
-  border-radius: 20px; /* Adjust the border-radius for a softer look */
-  border: 1px solid #ff0000; /* Set a border with the same color as the background */
-  background-color: transparent; /* Set the background color to transparent */
-  padding: 10px 50px; /* Adjust padding for better button dimensions */
-  cursor: pointer; /* Add a pointer cursor for better usability */
-  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+  border-radius: 20px; 
+  border: 1px solid #ff0000; 
+  background-color: transparent;
+  padding: 10px 50px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
 }
 
 .sign-in:hover {
-  background-color: #ee4545; /* Change background color on hover */
-  color: #fff; /* Change text color on hover */
+  background-color: #ee4545; 
+  color: #fff; 
 }
 
 .create-an-account {
   position: absolute;
   top: 540px;
   left: 43%;
-  font-size: 18px; /* Adjust the font size as needed */
+  font-size: 18px;
   font-weight: 500;
-  color: #ffffff; /* Set the text color to match the border and background color */
+  color: #ffffff;
   display: inline-block;
-  border-radius: 20px; /* Adjust the border-radius for a softer look */
-  border: 1px solid #ff0000; /* Set a border with the same color as the background */
-  background-color: transparent; /* Set the background color to transparent */
-  padding: 10px 50px; /* Adjust padding for better button dimensions */
-  cursor: pointer; /* Add a pointer cursor for better usability */
-  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+  border-radius: 20px; 
+  border: 1px solid #ff0000; 
+  background-color: transparent;
+  padding: 10px 50px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .create-an-account:hover {
-  background-color: #ee4545; /* Change background color on hover */
-  color: #fff; /* Change text color on hover */
+  background-color: #ee4545; 
+  color: #fff; 
 }

@@ -63,15 +63,6 @@ function LineGraph({ name, data, labels, unit = "", dataLimit }) {
         pointHoverRadius: 4,
         pointHoverBorderWidth: 3,
         pointHoverBackgroundColor: "#431857",
-        // Animation: {
-        //   tension: {
-        //     duration: 1000,
-        //     easing: 'linear',
-        //     from: 1,
-        //     to: 0,
-        //     loop: true
-        //   }
-        // }
       },
     ],
   };
