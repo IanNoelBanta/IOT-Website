@@ -46,10 +46,10 @@ const Rainfall = () => {
 
   return (
     <>
-      <div className="solar-irradiance">
+    <img className="background" alt="" src="/bg21.jpg" />
+      <div className="rainfall">
         <div className="rainfall2">RAINFALL</div>
-    <>{averageValue}, {highestValue}, {lowestValue}</>
-    <>{shown}</>
+         <div className="shown">{shown} </div>
       </div>
       <div className="graph">
         <button onClick={HandleToggle}>{buttonText}</button>

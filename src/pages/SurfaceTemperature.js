@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 
 const SurfaceTemperature = () => {
-  const sensorName = "Surface Temperature";
+  const sensorName = "mema";
   const sensor = FetchData(sensorName);
   const key = sensor.map((entry) => entry.key);
   const value = sensor.map((entry) => entry.value);
@@ -39,9 +39,11 @@ const SurfaceTemperature = () => {
 
   return (
     <>
+   <img className="background" alt="" src="/bg21.jpg" />
       <div className="surface-temperature">
         <div className="surface-temperature2">SURFACE TEMPERATURE</div>
       </div>
+ <div className="shown">{shown} </div>
       <div className="graph">
 
       <button onClick={HandleToggle}>{buttonText}</button>

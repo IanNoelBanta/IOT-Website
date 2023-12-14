@@ -36,9 +36,11 @@ const SolarIrradiance = () => {
   };
   return (
     <>
+   <img className="background" alt="" src="/bg21.jpg" />
       <div className="solar-irradiance">
         <div className="solar-irradiance2">SOLAR IRRADIANCE</div>
       </div>
+      <div className="shown">{shown} </div>
       <div className="graph">
 
       <button onClick={HandleToggle}>{buttonText}</button>

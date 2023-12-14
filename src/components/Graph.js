@@ -28,12 +28,12 @@ function LineGraph({ name, data, labels, unit = "", dataLimit }) {
         data: data,
         backgroundColor: (context) => {
           const bgColor = [
-            "rgba(122, 58, 125, 0.8)", // White
+            "rgba(163, 136, 201, 0.8)", // Light violet
+            "rgba(146, 110, 190, 0.8)",
+            "rgba(128, 84, 179, 0.8)",
+            "rgba(111, 59, 168, 0.8)",
+            "rgba(93, 34, 157, 0.8)",
             "rgba(122, 58, 125, 0.8)",
-            "rgba(122, 58, 125, 0.8)",
-            "rgba(122, 58, 125, 0.8)",
-            "rgba(122, 58, 125, 0.8)",
-            "rgba(122, 58, 125, 0.8)", // Fully transparent gray
           ];
 
           if (!context.chart.chartArea) {
@@ -53,10 +53,11 @@ function LineGraph({ name, data, labels, unit = "", dataLimit }) {
 
           return gradientBg;
         },
+        
         borderColor: "white",
-        borderWidth: 5,
-        pointBorderColor: "black",
-        pointBorderWidth: 4,
+        borderWidth: 2.5,
+        pointBorderColor: "#CBC3E3",
+        pointBorderWidth: 6,
         tension: 0.5,
         fill: true,
         pointHoverRadius: 4,
