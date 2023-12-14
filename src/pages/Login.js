@@ -73,6 +73,7 @@ const Login = () => {
       <img className="background" alt="" src="/bg2.jpg" />
       <div className="middle-box">
         {/* Your login form content goes here */}
+
         <div className="e-maill">E-mail</div>
         <div className="passwordd">Password</div>
         <input className="placeholderr" name="Email" id="Email" type="text" required onChange={handleEmailChange} value={userEmail} />

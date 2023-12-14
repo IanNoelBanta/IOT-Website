@@ -79,6 +79,7 @@ const SignUp = () => {
       <Link to="/Login"><button className="sign-in">Sign In</button></Link>
       {/* <div className="sign-up-child" /> */}
       <button className="create-an-account" onClick={handleRegister}>Create An Account</button>
+
     </div>
   );
 };
