@@ -2,57 +2,25 @@ import Navbar from "../components/Navbar";
 import "../styles/SolarIrradiance.css";
 import Chart from 'chart.js/auto';
 import { useEffect } from 'react';
+import { FetchData } from "../utils/FetchData.js";
+import { cleanKeys } from "../utils/CleanData.js";
+import LineGraph from "../components/Graph.js";
 
 const SolarIrradiance = () => {
-  useEffect(() => {
-    const ctx = document.getElementById('myChart');
-
-    const handleResize = () => {
-      if (ctx) {
-        myChart.resize();
-      }
-    };
-
-    const myChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ['Red', 'Blue', 'Yellow'],
-        datasets: [
-          {
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: false,
-        scales: {
-          y: {
-            beginAtZero: true,
-          },
-        },
-      },
-    });
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      myChart.destroy();
-    };
-  }, []);
+  const sensorName = "Solar Irradiance";
+  const sensor = FetchData(sensorName);
+  const key = sensor.map((entry) => entry.key);
+  const value = sensor.map((entry) => entry.value);
+  const filteredKey = cleanKeys(key, "HHMM", "12hour");
   
   return (
     <>
     <div className="solar-irradiance">
       <div className="solar-irradiance2">SOLAR IRRADIANCE</div>
       </div>
-      <div class="chart-parent">
-    <canvas id="myChart"></canvas>
-    </div>
+      <div className="graph">
+        <LineGraph data={value} labels={filteredKey} />
+      </div>
       <Navbar></Navbar>
     </>
   );

@@ -30,3 +30,9 @@
   top: 1068px;
   left: 332px;
 }
+.graph{
+  position: relative;
+  margin-left: 300px;
+  width: 80vw;
+  height: 70vh;
+ }

@@ -24,3 +24,9 @@
     color: var(--color-gray);
   
   }
+  .graph{
+    position: relative;
+    margin-left: 300px;
+    width: 80vw;
+    height: 70vh;
+   }
