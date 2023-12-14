@@ -1,49 +1,27 @@
-// AmbientTemp.js
-import React, { useState, useEffect } from 'react';
-import LineChart from '../components/LineChart';
-import { UserData } from '../components/Data';
-import Navbar from '../components/Navbar';
-import '../styles/AmbientTemp.css'; // Import AmbientTemp.css
+import Navbar from "../components/Navbar";
+import "../styles/AmbientTemp.css";
+import { FetchData } from "../utils/FetchData.js";
+import { cleanKeys } from "../utils/CleanData.js";
+import LineGraph from "../components/Graph.js";
 
-function AmbientTemp() {
-  const [userData, setUserData] = useState();
-
-  useEffect(() => {
-    // Process your data if needed
-    setUserData({
-      labels: UserData.map((item) => item.year),
-      datasets: [
-        {
-          label: 'Users Gained',
-          data: UserData.map((item) => item.userLost),
-          backgroundColor: [
-            'rgba(75,192,192,1)',
-            '#ecf0f1',
-            '#50AF95',
-            '#f3ba2f',
-            '#2a71d0',
-          ],
-          borderColor: 'black',
-          borderWidth: 2,
-        },
-      ],
-    });
-  }, []);
+const AmbientTemp = () => {
+  const sensorName = "Ambient Temperature";
+  const sensor = FetchData(sensorName);
+  const key = sensor.map((entry) => entry.key);
+  const value = sensor.map((entry) => entry.value);
+  const filteredKey = cleanKeys(key, "HHMM", "12hour");
 
   return (
     <>
-      <div className="AmbientTemp">
-        <div className="chart-container">
-          {userData ? (
-            <LineChart chartData={userData} />
-          ) : (
-            <p>Loading data...</p>
-          )}
-        </div>
+      <div className="ambient-temp">
+        <div className="ambient-temperature1"> AMBIENT TEMPERATURE</div>
+      </div>
+      <div className="graph">
+        <LineGraph data={value} labels={filteredKey} />
       </div>
       <Navbar />
     </>
   );
-}
+};
 
 export default AmbientTemp;

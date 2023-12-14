@@ -1,59 +1,66 @@
 import Navbar from "../components/Navbar";
 import "../styles/Rainfall.css";
-import Chart from 'chart.js/auto';
-import { useEffect } from 'react';
+import { FetchData, GetWeekly } from "../utils/FetchData.js";
+import { GetLowHighAveData, cleanKeys } from "../utils/CleanData.js";
+import LineGraph from "../components/Graph.js";
+import { useEffect, useState } from "react";
 
 const Rainfall = () => {
-  useEffect(() => {
-    const ctx = document.getElementById('myChart');
+  const sensorName = "Rainfall";
+  const sensor = FetchData(sensorName);
+  const key = sensor.map((entry) => entry.key);
+  const value = sensor.map((entry) => entry.value);
+  const filteredKey = cleanKeys(key, "HHMM", "12hour");
 
-    const handleResize = () => {
-      if (ctx) {
-        myChart.resize();
-      }
-    };
+  const dummyhr = [1, 2, 3, 4, 5];
+  const dummyhrlbl = ["a", "b", "c", "d", "e"];
 
-    const myChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ['Red', 'Blue', 'Yellow'],
-        datasets: [
-          {
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: false,
-        scales: {
-          y: {
-            beginAtZero: true,
-          },
-        },
-      },
-    });
+  const dummywk = [5, 4, 3, 2, 1];
+  const dummywklbl = ["e", "d", "c", "b", "a"];
 
-    window.addEventListener('resize', handleResize);
+  const isHourly = "Hourly";
+  const isWeekly = "Weekly";
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      myChart.destroy();
-    };
-  }, []);
-  
+
+
+  const sensorWeekly = GetWeekly(sensorName);
+  const weeklyKey = sensorWeekly.map((entry) => entry.key);
+  const weeklyValue = sensorWeekly.map((entry) => entry.value);
+
+  const [averageValue, lowestValue, highestValue] = GetLowHighAveData(value);
+
+  const [averageWeekly, lowestWeekly, highestWeekly] = GetLowHighAveData(weeklyValue);
+
+  const [chartData, setChartData] = useState(dummyhr);
+  const [buttonText, setButtonText] = useState("Weekly");
+  const [chartLabel, setChartLabel] = useState(dummywklbl);
+  const [shown, setShown] = useState(isHourly);
+
+  const handleToggle = () => {
+    setChartData((prevData) => (prevData === dummyhr ? dummywk : dummyhr));
+    setChartLabel((prevData) => (prevData === dummywklbl ? dummyhrlbl : dummywklbl));
+    setShown((prevData) => (prevData === isHourly ? isWeekly : isHourly));
+
+
+    setButtonText((prevText) =>
+      prevText === "Hourly"
+        ? "Weekly"
+        : "Hourly"
+    );
+  };
+
   return (
     <>
-    <div className="solar-irradiance">
-    <div className="rainfall2">RAINFALL</div>
-    </div>
-    <div class="chart-parent">
-    <canvas id="myChart"></canvas>
-    </div>
-      <Navbar/>
+      <div className="solar-irradiance">
+        <div className="rainfall2">RAINFALL</div>
+    <>{averageValue}, {highestValue}, {lowestValue}</>
+    <>{shown}</>
+      </div>
+      <div className="graph">
+        <button onClick={handleToggle}>{buttonText}</button>
+        <LineGraph data={chartData} labels={chartLabel} />
+      </div>
+      <Navbar />
     </>
   );
 };

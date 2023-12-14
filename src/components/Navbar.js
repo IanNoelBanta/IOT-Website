@@ -72,7 +72,7 @@ function Navbar() {
         </div>
 
         <div className="logout-wrapper">
-          <Link to="/LandingPage">
+          <Link to="/Login">
             <img className="dashboard-icon" alt="" src="/logout.svg" />
           </Link>
         </div>
