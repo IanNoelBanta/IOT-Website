@@ -13,15 +13,15 @@ const DashboardHome = () => {
 
 
 
-      <video
+      {/* <video
         autoPlay
         loop
         playsInline
         className="back-video"
         alt=""
         src="/Clouds.mp4"
-      ></video>
-
+      ></video> */}
+     <img className="dhbg" alt="" src="/bg4.jpg" />
       <div className="frame-container">
         <div className="welcome-parent">
           <div className="home">Welcome!</div>

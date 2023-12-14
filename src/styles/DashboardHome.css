@@ -1,10 +1,17 @@
-.back-video {
+/* .back-video {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-}
+} */
+
+.dhbg {
+    position: absolute;
+    width: 1920px;
+    height: 957px;
+    object-fit: cover;
+  }
 .frame-container {
     position: absolute;
     top: 80px;
@@ -64,10 +71,10 @@
 
 .dashboard {
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 33px;
     font-size: 20px;
-    color: #6A5ACD;
+    color: #ffffff;
     font-family: 'Poppins', sans-serif; 
 }
 
@@ -150,7 +157,7 @@
 .date-time{
     font-size: 15px;
     margin-left:  15px;
-    color: white;
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
     
 }
@@ -316,7 +323,7 @@
 
 
 .card2 .card-heading{
-    color: #a90f64;
+    color: #ffffff;
     margin-top: 15px;
     margin-left: 15px;
     font-size: 15px;
