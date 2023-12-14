@@ -38,7 +38,8 @@ const AmbientTemp = () => {
 
   return (
     <>
-    <img className="background" alt="" src="/bg21.jpg" />
+   <img className="background" alt="" src="/bg21.jpg" /> 
+   
       <div className="ambient-temp">
         <div className="ambient-temperature1"> AMBIENT TEMPERATURE</div>
       </div>
