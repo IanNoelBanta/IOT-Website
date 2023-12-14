@@ -1,7 +1,29 @@
 import Navbar from "../components/Navbar";
 import "../styles/DashboardHome.css";
+import React, { useState, useEffect } from "react";
 
 const DashboardHome = () => {
+
+  const [currentDateTime, setCurrentDateTime] = useState(new Date());
+
+  useEffect(() => {
+    // Update the current date-time every second
+    const intervalId = setInterval(() => {
+      setCurrentDateTime(new Date());
+    }, 1000);
+
+    // Clear the interval when the component unmounts
+    return () => clearInterval(intervalId);
+  }, []); // Empty dependency array ensures that the effect runs only once on mount
+
+  // Format the date-time string
+  const formattedDateTime = currentDateTime.toLocaleString("en-US", {
+    weekday: "long",
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric",
+  });
+
   return (
     <>
      <img className="dhbg" alt="" src="/bg4.jpg" />
@@ -43,14 +65,14 @@ const DashboardHome = () => {
       </div> 
 
       <div class="date-time">
-        <p id="date-time">Monday, 12:00</p>
+        <p id="date-time">{formattedDateTime}</p>
       </div>
 
-       <div class="condition-rain">
+       {/* <div class="condition-rain">
         <div class="condition">
           <div class="condition" id="condition">condition</div>
         </div>
-      </div> 
+      </div>  */}
 
     </div>
 
