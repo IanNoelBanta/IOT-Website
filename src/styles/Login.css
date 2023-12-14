@@ -1,199 +1,141 @@
-.login-child {
-  position: absolute;
-  top: 575px;
-  left: 213px;
-  border-radius: 105.53px;
-  width: 635px;
-  height: 377px;
-}
-.objectother-03-icon,
-.rectangle-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 512px;
-  height: 1058px;
+.background {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
   object-fit: cover;
 }
-.objectother-03-icon {
-  height: 5000px;
-  width: 5000px;
-  right: 0;
-  bottom: 300px;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.objectother-03 {
+
+.middle-box {
   position: absolute;
-  top: 70px;
-  left: 128px;
-  width: 661px;
-  height: 628px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 430px; /* Adjust the width as needed */
+  height: 377px; /* Adjust the height as needed */
+  background-color: rgba(214, 71, 71, 0.4); /* Adjust the RGB values and opacity as needed */
+  padding: 20px; /* Add padding as needed */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-.e-maill{
-  position: absolute;
-  display: inline-block;
-  margin-left: 100px;
-  margin-top: 100px;
-  top: 250px;
-  left: 900px;
-  font-weight: 500;
-  width: 628px;
-  height: 43px;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.passwordd{
-
-  position: absolute;
-  display: inline-block;
-  margin-left: 100px;
-  margin-top: 200px;
-  top: 280px;
-  left: 900px;
-  font-weight: 500;
-  width: 628px;
-  height: 43px;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.e-mail,
-.password,
-.welcome-back {
-  position: absolute;
-  display: inline-block;
-  margin-left: 800px;
   
-}
-.welcome-back {
-  top: 180px;
-  left: 400px;
-  font-size: 48px;
-  font-weight: 600;
-  width: 391px;
-  height: 84px;
-}
-.e-mail,
-.password {
-  top: 250px;
-  left: 789px;
+.e-maill {
+  position: absolute;
+  top: 40px;
+  left: 50px;
   font-weight: 500;
-  width: 628px;
-  height: 43px;
-  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
+  color: #ffffff; /* Set the desired text color */
+
 }
-.password {
-  top: 373px;
+
+
+
+.passwordd {
+  position: absolute;
+  top: 140px;
+  left: 50px;
+  font-weight: 500;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
+  color: rgb(255, 255, 255); /* Set the text color to match the border and background color */
 }
 
 .placeholderr {
-  margin-top: 390px;
-  margin-left: 890px;
   position: absolute;
-  width: 750px;
-  height: 40px;
-  border-style: solid;
-  border-radius: 9px;
-  position: absolute;
-  left: 110px;
-  
+  top: 80px;
+  left: 50px;
+  width: 300px;
+  height: 10px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(0, 0, 0, 0.7); /* Red color with 70% opacity */
+}
+
+.placeholderr:hover {
+  background-color: #7e1111; /* Change background color on hover */
+  color: #fff; /* Chrgb(173, 24, 24)xt color on hover */
 }
 
 .placeholder11 {
-  margin-top: 490px;
-  margin-left: 890px;
   position: absolute;
-  width: 750px;
-  height: 40px;
-  border-style: solid;
-  border-radius: 9px;
-  position: absolute;
-  left: 110px;
-  top: 30px;
-
+  top: 180px;
+  left: 50px;
+  width: 300px;
+  height: 10px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(0, 0, 0, 0.7); /* Red color with 70% opacity */
 }
 
-.placeholder1 {
-  margin-top: 100px;
-  margin-left: 1000px;
+.placeholder11:hover {
+  background-color: #7e1111; /* Change background color on hover */
+  color: #fff; /* Chrgb(173, 24, 24)xt color on hover */
 }
 
-.placeholder {
-  margin-top: -100px;
-  margin-left: 800px;
-}
-.login-item {
+.login-button {
   position: absolute;
-  top: 500px;
-  border-radius: var(--br-11xl) var(--br-31xl) var(--br-11xl) var(--br-31xl);
-  background-color: var(--color-mediumslateblue);
-  width: 390px;
-  height: 75px;
-}
-/* .login-button {
-  position: absolute;
-  top: 550px;
-  left: 1028px;
-  font-size: 12px;
+  top: 230px;
+  left: 140px;
+  font-size: 18px; /* Adjust the font size as needed */
   font-weight: 500;
-  color: var(--color-white);
+  color: #ffffff; /* Set the text color to match the border and background color */
   display: inline-block;
-  width: 60px;
-  height: 30px;
-} */
+  border-radius: 20px; /* Adjust the border-radius for a softer look */
+  border: 1px solid #ff0000; /* Set a border with the same color as the background */
+  background-color: transparent; /* Set the background color to transparent */
+  padding: 10px 50px; /* Adjust padding for better button dimensions */
+  cursor: pointer; /* Add a pointer cursor for better usability */
+  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+}
 
-.login-button{
-  position: absolute;
-  top: 620px;
-  left: 1300px;
-  font-size: 22px;
-  font-weight: 500;
-  color: whitesmoke;
-  display: inline-block;
-  border-radius: 25px;
-  border-color: #925fe2; 
-  background-color: #925fe2;
-  width: 150px;
-  height: 50px;
+.login-button:hover {
+  background-color: #ee4545; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
 }
 .span {
   color: var(--color-mediumslateblue);
 }
+
 .register1 {
+  position: absolute;
+  top: 30px;
+  left: 50px;
   font-weight: 500;
-  top: 550px;
-  left: 1028px;
   font-size: 12px;
-  font-weight: 500;
-  color: whitesmoke;
+  color: rgb(255, 255, 255); /* Set the text color to match the border and background color */
   display: inline-block;
-  border-radius: 25px;
-  border-color: #925fe2; 
-  background-color: #925fe2;
-  width: 60px;
-  height: 30px;
-  
-  
+  border-radius: 10px; /* Adjust the border-radius for a softer look */
+  border: 1px solid #ff0000; /* Set a border with the same color as the background */
+  background-color: transparent; /* Set the background color to transparent */
+  padding: 3px 10px; /* Adjust padding for better button dimensions */
+  cursor: pointer; /* Add a pointer cursor for better usability */
+  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
 }
+
+.register1:hover {
+  background-color: #ee4545; /* Change background color on hover */
+  color: #ffffff; /* Change text color on hover */
+}
+
 .dont-have-and-container {
   position: absolute;
-  top: 900px;
-  left: 1600px;
+  top: 300px;
+  left: 125px;
   display: inline-block;
-  width: 389px;
-  height: 62px;
-  font-family: var(--font-inter);
-  font-size: 20px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.7); /* Red color with 70% opacity */
 }
+
 .login {
   position: relative;
-  background-color: var(--color-white);
   width: 100%;
-  height: 100vh; /* Use viewport height instead of a fixed value */
+  height: 100vh;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-5xl);

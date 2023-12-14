@@ -64,16 +64,9 @@ const SignUp = () => {
 
   return (
     <div className="sign-up">
+      <img className="background1" alt="" src="/bg2.jpg" />
+      <div className="signbox"></div>
       <div className="sign-up1">Sign Up</div>
-      <img
-        className="cloudy-climes-high-resolution-icon"
-        alt=""
-        src="/cloudyclimeshighresolutionlogoblacktransparent-1@2x.png"
-      />
-      <div className="your-weather-journey">
-        Your weather journey begins now – sign up and ride the storm of
-        precision with us!
-      </div>
       <div className="e-mail">E-mail</div>
       <div className="name">
         <p className="name1">Name</p>
@@ -86,8 +79,6 @@ const SignUp = () => {
       <Link to="/Login"><button className="sign-in">Sign In</button></Link>
       {/* <div className="sign-up-child" /> */}
       <button className="create-an-account" onClick={handleRegister}>Create An Account</button>
-       <img className="rectangle-icon" alt="" src="/rectangle@2x.png" /> 
-       <img className="saly-1-icon" alt="" src="/saly1@2x.png" /> 
     </div>
   );
 };

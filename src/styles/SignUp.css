@@ -1,200 +1,166 @@
-.sign-up1 {
-  position: absolute;
-  top: 100px;
-  left: 97px;
-  font-size: 40px;
-  font-weight: 600;
-  display: inline-block;
-  width: 731px;
-  height: 84px;
-}
-.cloudy-climes-high-resolution-icon {
-  position: absolute;
-  top: 40px;
-  left: 43px;
-  width: 43px;
-  height: 44px;
-  object-fit: cover;
-}
-.e-mail,
-.your-weather-journey {
-  position: absolute;
-  font-weight: 500;
-  display: inline-block;
-}
-.your-weather-journey {
-  top: 160px;
-  left: 97px;
-  font-size: 15px;
-  color: rgba(0, 0, 0, 0.7);
-  width: 526px;
-  height: 75px;
-}
-.e-mail {
-  top: 350px;
-  left: -709px;
-  width: 628px;
-  height: 43px;
-  font-size: 17px;
-}
-.name1 {
-  margin: 0;
-}
-.name {
-  position: absolute;
-  top: 250px;
-  left: 90px;
-  font-weight: 500;
-  font-size: 17px;
-  display: inline-block;
-  width: 628px;
-  height: 43px;
-}
-
-.placeholder{
-  width: 400px;
-  height: 20px;
-  border-style: solid;
-  border-radius: 9px;
-  position: absolute;
-  top: 380px;
-  left: -709px;
-  
-}
-
-.placeholder1{
-  width: 400px;
-  height: 20px;
-  border-radius: 9px;
-  border-style: solid;
-  position: absolute;
-  top: 280px;
-  left: -909px;
-}
-
-.placeholder2{
-  width: 400px;
-  height: 20px;
-  border-radius: 9px;
-  border-style: solid;
-  top: 480px;
-  left: 89px;
-  position: absolute;
-
-}
-
-/* .placeholder,
-.placeholder1,
-.placeholder2 {
-  border: 2px solid var(--color-gainsboro);
-  background-color: var(--color-gray-100);
-  position: absolute;
-  top: 480px;
-  left: 89px;
-  border-radius: var(--br-6xl);
-  box-sizing: border-box;
-  width: 611px;
-  height: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-3xl) var(--padding-23xl);
-}
-.placeholder1,
-.placeholder2 {
-  top: 380px;
-}
-.placeholder2 {
-  top: 280px;
-} */
-
-.already-have-an,
-.password,
-.sign-in {
-  position: absolute;
-  top: 450px;
-  left: -709px;
-  font-weight: 500;
-  font-size: 17px;
-  display: inline-block;
-  width: 628px;
-  height: 44px;
-}
-.already-have-an {
-  top: 680px;
-  left: 75px;
-  width: 500px;
-  height: 37px;
-}
-.sign-in {
-  top: 671px;
-  
-  width: 500px;
-  height: 37px;
-  cursor: pointer;
-  font-size: 17px;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  left: 260px;
-  font-weight: 600;
-  font-family: var(--font-poppins);
-  color: #8700b6;
-  text-align: left;
-  width: 89px;
-}
-.sign-up-child {
-  position: absolute;
-  top: 570px;
-  left: 217px;
-  border-radius: var(--br-11xl) var(--br-31xl) var(--br-11xl) var(--br-31xl);
-  background-color: #925fe2;
-  width: 390px;
-  height: 40px;
-}
-.create-an-account {
-  position: absolute;
-  top: 570px;
-  left: 217px;
-  font-size: 20px;
-  font-weight: 500;
-  color: whitesmoke;
-  display: inline-block;
-  border-radius: 25px;
-  border-color: #925fe2; 
-  background-color: #925fe2;
-  width: 390px;
-  height: 40px;
-}
-.rectangle-icon,
-.saly-1-icon {
-  position: absolute;
-  top: 0;
-  left: 767px;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-}
-.saly-1-icon {
-  height: 82.32%;
-  width: 54.93%;
-  top: 9.67%;
-  right: -4.1%;
-  bottom: 8.01%;
-  left: 48%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.sign-up {
+.background1 {
   position: relative;
-  background-color: var(--color-white);
   width: 100%;
   height: 100vh;
-  text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--color-black);
-  font-family: var(--font-poppins);
+  object-fit: cover;
+  overflow:hidden
+}
+
+.signbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -53%);
+  width: 500px;
+  height: 600px;
+  background-color: rgba(214, 71, 71, 0.4);
+  padding: 20px;
   box-sizing: border-box;
+}
+
+.sign-up1 {
+  position: absolute;
+  top: 200px;
+  left: 46.5%;
+  font-weight: 500;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
+  color: #ffffff; /* Set the desired text color */
+}
+
+
+.e-mail {
+  position: absolute;
+  top: 350px;
+  left: 41%;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
+  color: #ffffff; /* Set the desired text color */
+}
+
+.name1 {
+  position: absolute;
+  top: 250px;
+  left: 41%;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
+  color: #ffffff; /* Set the desired text color */
+}
+
+
+.password {
+  position: absolute;
+  top: 430px;
+  left: 41%;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
+  color: #ffffff; /* Set the desired text color */
+}
+
+.placeholder {
+  position: absolute;
+  top: 305px;
+  left: 780px;
+  width: 300px;
+  height: 10px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(0, 0, 0, 0.7); /* Red color with 70% opacity */
+}
+
+.placeholder:hover {
+  background-color: #7e1111; /* Change background color on hover */
+  color: #fff; /* Chrgb(173, 24, 24)xt color on hover */
+}
+
+.placeholder1 {
+  position: absolute;
+  top: 385px;
+  left: 780px;
+  width: 300px;
+  height: 10px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(0, 0, 0, 0.7); /* Red color with 70% opacity */
+}
+
+.placeholder1:hover {
+  background-color: #7e1111; /* Change background color on hover */
+  color: #fff; /* Chrgb(173, 24, 24)xt color on hover */
+}
+
+.placeholder2 {
+  position: absolute;
+  top: 465px;
+  left: 780px;
+  width: 300px;
+  height: 10px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(0, 0, 0, 0.7); /* Red color with 70% opacity */
+}
+
+.placeholder2:hover {
+  background-color: #7e1111; /* Change background color on hover */
+  color: #fff; /* Chrgb(173, 24, 24)xt color on hover */
+}
+
+.already-have-an {
+  position: absolute;
+  top: 630px;
+  left: 44.5%;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif; /* Set font-family to Poppins */
+  color: #ffffff; /* Set the desired text color */
+}
+
+.sign-in {
+  position: absolute;
+  top: 660px;
+  left: 46%;
+  font-weight: 500;
+  color: #ffffff; /* Set the text color to match the border and background color */
+  display: inline-block;
+  border-radius: 20px; /* Adjust the border-radius for a softer look */
+  border: 1px solid #ff0000; /* Set a border with the same color as the background */
+  background-color: transparent; /* Set the background color to transparent */
+  padding: 10px 50px; /* Adjust padding for better button dimensions */
+  cursor: pointer; /* Add a pointer cursor for better usability */
+  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+}
+
+.sign-in:hover {
+  background-color: #ee4545; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+.create-an-account {
+  position: absolute;
+  top: 540px;
+  left: 43%;
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: 500;
+  color: #ffffff; /* Set the text color to match the border and background color */
+  display: inline-block;
+  border-radius: 20px; /* Adjust the border-radius for a softer look */
+  border: 1px solid #ff0000; /* Set a border with the same color as the background */
+  background-color: transparent; /* Set the background color to transparent */
+  padding: 10px 50px; /* Adjust padding for better button dimensions */
+  cursor: pointer; /* Add a pointer cursor for better usability */
+  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+}
+
+.create-an-account:hover {
+  background-color: #ee4545; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
 }
