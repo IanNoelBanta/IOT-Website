@@ -44,8 +44,8 @@ const RelativeHumidity = () => {
     <div className="relative-humidity">
     <div className="relative-humidity2">RELATIVE HUMIDITY</div>
   
-    <div className="shown">{shown} </div>
-      </div>
+    </div>
+      <div className="shown">{shown} </div>
       <div className="graph">
         <button onClick={HandleToggle}>{buttonText}</button>
       <LineGraph data={shown === isHourly ? value : weeklyValue} labels={shown === isHourly ? filteredKey : weeklyKey} />

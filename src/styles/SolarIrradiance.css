@@ -11,7 +11,21 @@ html, body {
   object-fit: fill;
 
 }
+.shown{
+  position: absolute;
+  top: 800px;
+  left: 1000px;
+  font-size: 33px;
+  font-weight: 600;
+  color: #925fe2;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 491px;
+  height: 61px;
+  font-family: 'Poppins', sans-serif; 
 
+}
 
 .solar-irradiance2 {
   position: absolute;
