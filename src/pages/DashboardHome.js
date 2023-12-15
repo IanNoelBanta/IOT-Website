@@ -60,6 +60,37 @@ const DashboardHome = () => {
               alt=""
               src="/daily.png"
             />
+            <img
+              className="daily-png"
+              alt=""
+              src="/daily.png"
+            />
+            <img
+              className="daily-png"
+              alt=""
+              src="/daily.png"
+            />
+            <img
+              className="daily-png"
+              alt=""
+              src="/daily.png"
+            />
+            <img
+              className="daily-png"
+              alt=""
+              src="/daily.png"
+            />
+            <img
+              className="daily-png"
+              alt=""
+              src="/daily.png"
+            />
+            <img
+              className="daily-png"
+              alt=""
+              src="/daily.png"
+            />
+            
             </div>
       </div>
     </div>
