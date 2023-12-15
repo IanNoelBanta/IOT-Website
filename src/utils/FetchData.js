@@ -104,7 +104,7 @@ export const GetWeekly = (path) => {
     const year = parseInt(Key.slice(0, 4), 10);
     const date = new Date(year, month, day);
 
-    const monthsAbbreviated = [
+    const months = [
       "Jan",
       "Feb",
       "Mar",
@@ -118,7 +118,7 @@ export const GetWeekly = (path) => {
       "Nov",
       "Dec",
     ];
-    const monthAbbrev = monthsAbbreviated[date.getMonth()];
+    const monthAbbrev = months[date.getMonth()];
     const dayOfWeek = date.toLocaleDateString("en-US", { weekday: "long" });
     const dayOfMonth = date.getDate();
 

@@ -10,7 +10,7 @@ export const cleanKeys = (key, displayDate = false, timeFormat = "24hour") => {
 
     const time = entry.slice(9);
     let hours = parseInt(time.slice(0, 2), 10);
-    const minutes = time.slice(2, 4);
+    const minutes = time.slice(2 , 4);
 
     if (timeFormat === "12hour") {
       const period = hours >= 12 ? "PM" : "AM";
@@ -28,17 +28,13 @@ export const cleanKeys = (key, displayDate = false, timeFormat = "24hour") => {
   });
 };
 
-export const GetLowHighAveData = (values) => {
-  const lowestValue = Math.min(...values);
-  const highestValue = Math.max(...values);
-  const averageValue =
-    values.reduce((acc, val) => acc + val, 0) / values.length;
-  const roundedAverage = Number(averageValue.toFixed(2));
-
-  return [roundedAverage, lowestValue, highestValue];
+export const getAverage = (values) => {
+  var sum = 0;
+  for (let i = 0; i < values.length; i++) {
+    sum += Number(values[i]);
+  }
+  return sum / values.length;
 };
-
-
 
 export const GetWeek = (path) => {
   const allData = FetchData(path);
@@ -62,23 +58,7 @@ export const GetWeek = (path) => {
 
 export const GetMostRecent = (path) => {
   const allData = FetchData(path);
-  const [mostRecent, setMostRecent] = useState(null);
-
-  useEffect(() => {
-    if (allData.length > 0) {
-      let mostRecent = null;
-      allData.forEach((item) => {
-        if (!mostRecent || item.key > mostRecent.key) {
-          mostRecent = item;
-        }
-      });
-
-      setMostRecent(mostRecent ? mostRecent.value : null);
-    } else {
-      setMostRecent(null);
-    }
-  }, [allData]);
-
+  const mostRecent = allData.slice(-1);
   return mostRecent;
 };
 
