@@ -76,3 +76,20 @@ margin-left: 300px;
 width: 80vw;
 height: 70vh;
 }
+
+.graph-button {
+  padding: 10px 20px;
+  background-color: darkviolet;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif; 
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+/* Styles for button on hover */
+.graph-button:hover {
+  background-color: darkviolet;
+}

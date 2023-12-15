@@ -43,7 +43,7 @@ const SurfaceTemperature = () => {
  <div className="shown">{shown} </div>
       <div className="graph">
 
-      <button onClick={HandleToggle}>{buttonText}</button>
+      <button className="graph-button" onClick={HandleToggle}>{buttonText}</button>
       <LineGraph data={shown === isHourly ? value : weeklyValue} labels={shown === isHourly ? filteredKey : weeklyKey} />
 
       </div>

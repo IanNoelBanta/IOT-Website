@@ -10,7 +10,7 @@ const DashboardHome = () => {
   const temperatureData = FetchData("/DHT22/Temperature"); 
   const humidityData = FetchData("/mema"); 
   const windDirectionData = FetchData("/mema"); 
-  const ambientTemperatureData = FetchData("/mema"); 
+  const ambientTemperatureData = FetchData("/Heat Index"); 
   const relativeHumidityData = FetchData("/DHT22/Humidity"); 
   const surfaceTemperatureData = FetchData("/DHT22/Temperature"); 
   const rainfallData = FetchData("/Rainfall"); 
