@@ -20,12 +20,13 @@ ChartJS.register(
 );
 
 function LineGraph({ name, data, labels, unit = "", dataLimit }) {
+  const limitedData = data.slice(0, dataLimit).reverse();
   const limitedLabels = labels.slice(0, dataLimit).reverse();
   const graphData = {
     labels: limitedLabels,
     datasets: [
       {
-        data: data,
+        data: limitedData,
         backgroundColor: (context) => {
           const bgColor = [
             "rgba(163, 136, 201, 0.8)", 

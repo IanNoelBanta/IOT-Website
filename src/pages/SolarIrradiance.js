@@ -41,7 +41,7 @@ const SolarIrradiance = () => {
       <div className="graph">
 
       <button className="graph-button" onClick={HandleToggle}>{buttonText}</button>
-      <LineGraph data={shown === isHourly ? value : weeklyValue} labels={shown === isHourly ? filteredKey : weeklyKey} />
+      <LineGraph data={shown === isHourly ? value : weeklyValue} labels={shown === isHourly ? filteredKey : weeklyKey} dataLimit={12}/>
 
       </div>
       <Navbar></Navbar>
