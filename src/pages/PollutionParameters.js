@@ -6,7 +6,7 @@ import { GetLowHighAveData, cleanKeys } from "../utils/CleanData.js";
 import { useEffect, useState } from "react";
 
 const PollutionParameters = () => {
-  const sensorName = "mema";
+  const sensorName = "MQ-7 Sensor";
   const sensor = FetchData(sensorName);
   const key = sensor.map((entry) => entry.key);
   const value = sensor.map((entry) => entry.value);

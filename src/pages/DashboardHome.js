@@ -7,16 +7,16 @@ const DashboardHome = () => {
 
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
   
-  const temperatureData = FetchData("/mema"); 
+  const temperatureData = FetchData("/DHT22/Temperature"); 
   const humidityData = FetchData("/mema"); 
   const windDirectionData = FetchData("/mema"); 
   const ambientTemperatureData = FetchData("/mema"); 
-  const relativeHumidityData = FetchData("/mema"); 
-  const surfaceTemperatureData = FetchData("/mema"); 
-  const rainfallData = FetchData("/mema"); 
-  const solarIrradianceData = FetchData("/mema"); 
+  const relativeHumidityData = FetchData("/DHT22/Humidity"); 
+  const surfaceTemperatureData = FetchData("/DHT22/Temperature"); 
+  const rainfallData = FetchData("/Rainfall"); 
+  const solarIrradianceData = FetchData("/Irradiance Sensor"); 
   const windSpeedData = FetchData("/mema"); 
-  const pollutionParametersData = FetchData("/mema"); 
+  const pollutionParametersData = FetchData("/MQ-7 Sensor"); 
 
   useEffect(() => {
     // Update the current date-time every second

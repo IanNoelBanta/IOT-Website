@@ -6,7 +6,7 @@ import LineGraph from "../components/Graph.js";
 import { useEffect, useState } from "react";
 
 const Rainfall = () => {
-  const sensorName = "mema";
+  const sensorName = "Rainfall";
   const sensor = FetchData(sensorName);
   const key = sensor.map((entry) => entry.key);
   const value = sensor.map((entry) => entry.value);

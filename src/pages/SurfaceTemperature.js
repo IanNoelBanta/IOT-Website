@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 
 const SurfaceTemperature = () => {
-  const sensorName = "mema";
+  const sensorName = "/DHT22/Temperature";
   const sensor = FetchData(sensorName);
   const key = sensor.map((entry) => entry.key);
   const value = sensor.map((entry) => entry.value);

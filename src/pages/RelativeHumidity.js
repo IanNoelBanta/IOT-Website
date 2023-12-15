@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 
 const RelativeHumidity = () => {
-  const sensorName = "mema";
+  const sensorName = "/DHT22/Humidity";
   const sensor = FetchData(sensorName);
   const key = sensor.map((entry) => entry.key);
   const value = sensor.map((entry) => entry.value);
