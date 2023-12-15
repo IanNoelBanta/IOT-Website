@@ -1,75 +1,57 @@
-.untitled-1440-x-1024-px-1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.landing-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 120px;
 }
-.cloudy-climes-high-resolution-icon {
-  position: absolute;
-  top: 27px;
-  left: 40px;
-  width: 73px;
-  height: 74px;
-  object-fit: cover;
+.untitled-1440-x-1024-px-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    /* height: 100vh; */
+}
+.cloudy-climes-high-resolution-icon-landing {
+    position: absolute;
+    top: 27px;
+    left: 40px;
+    width: 73px;
+    height: 74px;
+    object-fit: cover;
 }
 .cloudy-climes {
-  position: absolute;
-  top: 230px;
-  left: 135px;
-  -webkit-text-stroke: 1px #6c0b74;
+    position: absolute;
+    top: 230px;
+    left: 450px;
+    -webkit-text-stroke: 1px #6c0b74;
 }
 .designing-an-automatic {
-  position: absolute;
-  top: 400px;
-  left: 300px;
-  font-size: 25px;
-  font-family: var(--font-inter);
-  color: #000;
-  text-align: center;
-  display: inline-block;
-  width: 968px;
-  height: 20px;
-}
-.hover,
-.log-in {
-  position: absolute;
+    position: absolute;
+    top: 380px;
+    left: 450px;
+    font-size: 25px;
+    font-family: var(--font-inter);
+    color: #000;
+    text-align: center;
+    display: inline-block;
+    width: 968px;
+    height: 20px;
 }
 .hover {
-  height: calc(100% - 961px);
-  width: calc(100% - 1189px);
-  top: 120px;
-  right: 594px;
-  bottom: 100px;
-  left: 100px;
-  border-radius: 15px;
-  background-color: var(--color-white);
+    position: absolute;
+    top: 700px;
+    left: 800px;
 }
 .log-in {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  top: calc(55% + 130px);
-  left: calc(50% - 103px);
-  font-size: 30px;
-  line-height: 32px;
-  font-family: var(--font-inter);
-  color: rgba(74, 17, 95, 0.79);
-  text-align: center;
-  display: inline-block;
-  width: 207px;
-  height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 30px;
+    color: rgba(74, 17, 95, 0.79);
+    transition: .3s ease;
 }
-.landing-page {
-  position: relative;
-  background-color: var(--color-white);
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  text-align: left;
-  font-size: 120px;
-  color: var(--color-white);
-  font-family: var(--font-krona-one);
-}
+
+  .log-in:hover{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+  }

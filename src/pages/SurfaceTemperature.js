@@ -1,83 +1,54 @@
-import "./SurfaceTemperature.css";
+import Navbar from "../components/Navbar";
+import "../styles/SurfaceTemperature.css";
+import LineGraph from "../components/Graph.js";
+import { FetchData, GetWeekly } from "../utils/FetchData.js";
+import { GetLowHighAveData, cleanKeys } from "../utils/CleanData.js";
+import { useEffect, useState } from "react";
+
+
 
 const SurfaceTemperature = () => {
+  const sensorName = "/DHT22/Temperature";
+  const sensor = FetchData(sensorName);
+  const key = sensor.map((entry) => entry.key);
+  const value = sensor.map((entry) => entry.value);
+  const filteredKey = cleanKeys(key, "HHMM", "12hour");
+
+  const isHourly = "Hourly";
+  const isWeekly = "Weekly";
+  const sensorWeekly = GetWeekly(sensorName);
+  const weeklyKey = sensorWeekly.map((entry) => entry.key).reverse();
+  const weeklyValue = sensorWeekly.map((entry) => entry.value);
+
+  const [buttonText, setButtonText] = useState("Weekly");
+  const [shown, setShown] = useState(isHourly);
+
+  const HandleToggle = () => {
+    setShown((prevData) => (prevData === isHourly ? isWeekly : isHourly));
+
+    setButtonText((prevText) =>
+      prevText === "Hourly"
+        ? "Weekly"
+        : "Hourly"
+    );
+  };
+
+
   return (
-    <div className="surface-temperature">
-      <div className="frame-parent">
-        <div className="frame-group">
-          <div className="dashboard-parent">
-            <img className="dashboard-icon" alt="" src="/dashboard.svg" />
-            <div className="home">Home</div>
-          </div>
-          <div className="cash-parent">
-            <div className="dashboard-icon" />
-            <div className="ambient-temperature">Ambient Temperature</div>
-          </div>
-          <div className="dashboard-parent">
-            <img className="cash-icon" alt="" src="/cash.svg" />
-            <div className="ambient-temperature">Surface Temperature</div>
-          </div>
-          <div className="cash-parent">
-            <img className="dashboard-icon" alt="" src="/cash1.svg" />
-            <div className="ambient-temperature">Relative Humidity</div>
-          </div>
-          <div className="cash-parent">
-            <img className="dashboard-icon" alt="" src="/cash2.svg" />
-            <div className="ambient-temperature">Wind Speed/Direction</div>
-          </div>
-          <div className="cash-parent">
-            <img className="dashboard-icon" alt="" src="/cash3.svg" />
-            <div className="ambient-temperature">Solar Irradiance</div>
-          </div>
-          <div className="cash-parent">
-            <div className="dashboard-icon" />
-            <div className="rainfall">Rainfall</div>
-          </div>
-          <div className="cash-parent3">
-            <div className="dashboard-icon" />
-            <div className="pollution-parameters">Pollution Parameters</div>
-          </div>
-          <div className="cash-wrapper">
-            <img className="dashboard-icon" alt="" src="/cash4.svg" />
-          </div>
-          <div />
-          <div />
-          <div className="cash-frame">
-            <div className="dashboard-icon" />
-          </div>
-        </div>
-        <div className="logout-wrapper">
-          <img className="dashboard-icon" alt="" src="/logout.svg" />
-        </div>
-        <div className="rectangle-wrapper">
-          <div className="frame-child" />
-        </div>
-        <img
-          className="cloudy-climes-high-resolution-icon"
-          alt=""
-          src="/cloudyclimeshighresolutionlogoblacktransparent-1@2x.png"
-        />
-        <div className="cash-wrapper1">
-          <div className="dashboard-icon" />
-        </div>
+    <>
+   <img className="background" alt="" src="/bg21.jpg" />
+      <div className="surface-temperature">
+        <div className="surface-temperature2">SURFACE TEMPERATURE</div>
       </div>
-      <img
-        className="thermostat-black-24dp-2-icon"
-        alt=""
-        src="/thermostat-black-24dp-2.svg"
-      />
-      <img
-        className="cloudy-snowing-black-24dp-2-icon"
-        alt=""
-        src="/cloudy-snowing-black-24dp-2.svg"
-      />
-      <img
-        className="location-city-black-24dp-2-icon"
-        alt=""
-        src="/location-city-black-24dp-2.svg"
-      />
-      <div className="surface-temperature2">SURFACE TEMPERATURE</div>
-    </div>
+ <div className="shown">{shown} </div>
+      <div className="graph">
+
+      <button className="graph-button" onClick={HandleToggle}>{buttonText}</button>
+      <LineGraph data={shown === isHourly ? value : weeklyValue} labels={shown === isHourly ? filteredKey : weeklyKey} dataLimit={12}/>
+
+      </div>
+      <Navbar />
+    </>
   );
 };
 

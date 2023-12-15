@@ -3,86 +3,81 @@ import "../styles/Navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+  const NavBtns = [
+    {
+      label: "Home",
+      icon: "/dashboard.svg",
+      link: "/DashboardHome",
+    },
+    {
+      label: "Ambient Temperature",
+      icon: "/thermostat-black-24dp-2.svg",
+      link: "/AmbientTemp",
+    },
+    {
+      label: "Surface Temperature",
+      icon: "/cash.svg",
+      link: "/SurfaceTemperature",
+    },
+    {
+      label: "Relative Humidity",
+      icon: "/cash1.svg",
+      link: "/RelativeHumidity",
+    },
+    {
+      label: "Wind Speed/Direction",
+      icon: "/cash2.svg",
+      link: "/WindSpeedDirection",
+    },
+    {
+      label: "Solar Irradiance",
+      icon: "/cash3.svg",
+      link: "/SolarIrradiance",
+    },
+    {
+      label: "Rainfall",
+      icon: "/cloudy-snowing-black-24dp-2.svg",
+      link: "/Rainfall",
+    },
+    {
+      label: "Pollution Parameters",
+      icon: "/location-city-black-24dp-2.svg",
+      link: "/PollutionParameters",
+    },
+    
+  ];
+
   return (
-    <div className="solar-irradiance">
-      <div className="frame-parent">
-        <div className="frame-group">
-          <div className="dashboard-parent">
-            <img className="dashboard-icon" alt="" src="/dashboard.svg" />
-            <Link to="/DashboardHome">
-              <div className="home">Home</div>
+    <div className="frame-parent">
+      <div className="frame-group">
+        {NavBtns.map((btn, index) => (
+          <div className="dashboard-parent" key={index}>
+            <img className="dashboard-icon" alt={btn.label} src={btn.icon} />
+            <Link to={btn.link} style={{ textDecoration: "none" }}>
+              <a href= {btn.web}>
+              <div className="labels">{btn.label}</div>
+              </a>
             </Link>
           </div>
-          <div className="cash-parent">
-            <div className="dashboard-icon" />
-            <Link to="/AmbientTemp">
-              <div className="ambient-temperature">Ambient Temperature</div>
-            </Link>
-          </div>
-          <div className="cash-parent">
-            <img className="cash-icon" alt="" src="/cash.svg" />
-            <div className="ambient-temperature">Surface Temperature</div>
-          </div>
-          <div className="cash-parent">
-            <img className="dashboard-icon" alt="" src="/cash1.svg" />
-            <div className="ambient-temperature">Relative Humidity</div>
-          </div>
-          <div className="cash-parent">
-            <img className="dashboard-icon" alt="" src="/cash2.svg" />
-            <div className="ambient-temperature">Wind Speed/Direction</div>
-          </div>
-          <div className="dashboard-parent">
-            <img className="dashboard-icon" alt="" src="/cash3.svg" />
-            <div className="ambient-temperature">Solar Irradiance</div>
-          </div>
-          <div className="cash-parent">
-            <div className="dashboard-icon" />
-            <div className="rainfall">Rainfall</div>
-          </div>
-          <div className="cash-parent3">
-            <div className="dashboard-icon" />
-            <div className="pollution-parameters">Pollution Parameters</div>
-          </div>
-          <div className="cash-wrapper">
-            <img className="dashboard-icon" alt="" src="/cash4.svg" />
-          </div>
-          <div />
-          <div />
-          <div className="cash-frame">
-            <div className="dashboard-icon" />
-          </div>
-        </div>
-        <div className="logout-wrapper">
-          <img className="dashboard-icon" alt="" src="/logout.svg" />
-        </div>
-        <div className="rectangle-wrapper">
-          <div className="frame-child" />
-        </div>
-        <img
-          className="cloudy-climes-high-resolution-icon"
-          alt=""
-          src="/cloudyclimeshighresolutionlogoblacktransparent-1@2x.png"
-        />
-        <div className="cash-wrapper1">
-          <div className="dashboard-icon" />
-        </div>
+        ))}
       </div>
+      <div/>
+
+      <div className="logout-wrapper">
+        <Link to="/Login">
+          <img className="dashboard-icon" alt="Logout" src="/logout.svg" />
+        </Link>
+      </div>
+
+      <div className="rectangle-wrapper">
+        <div className="frame-child" />
+      </div>
+
       <img
-        className="thermostat-black-24dp-2-icon"
+        className="cloudy"
         alt=""
-        src="/thermostat-black-24dp-2.svg"
+        src="/cloudyclimeshighresolutionlogoblacktransparent-1@2x.png"
       />
-      <img
-        className="cloudy-snowing-black-24dp-2-icon"
-        alt=""
-        src="/cloudy-snowing-black-24dp-2.svg"
-      />
-      <img
-        className="location-city-black-24dp-2-icon"
-        alt=""
-        src="/location-city-black-24dp-2.svg"
-      />
-      {/* <div className="solar-irradiance2">SOLAR IRRADIANCE</div> */}
     </div>
   );
 }
