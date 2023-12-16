@@ -15,7 +15,7 @@ const DashboardHome = () => {
   const surfaceTemperatureData = FetchData("/DHT22/Temperature"); 
   const rainfallData = FetchData("/Rainfall"); 
   const solarIrradianceData = FetchData("/Irradiance Sensor"); 
-  const windSpeedData = FetchData("/mema"); 
+  const windSpeedData = FetchData("/Wind Speed Sensor"); 
   const pollutionParametersData = FetchData("/MQ-7 Sensor"); 
 
   useEffect(() => {
