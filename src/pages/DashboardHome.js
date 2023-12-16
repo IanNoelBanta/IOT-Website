@@ -103,8 +103,7 @@ const DashboardHome = () => {
       </div>
 
        <div class="temprature">
-        <h1 id="temp">{temperatureData[0]?.value || 0}</h1>
-        <span class="temp-unit">°C</span>
+        <h1 id="temp">{temperatureData[0]?.value || 0}°C</h1>
       </div> 
 
       <div class="date-time">
@@ -148,7 +147,7 @@ const DashboardHome = () => {
               src="/therms.png"
             /> 
             <div class="content-temp">
-           <p class="value-index">{ambientTemperatureData[0]?.value || 0}</p> 
+           <p class="value-index">{ambientTemperatureData[0]?.value || 0}°C</p> 
            </div>
         
       </div>
@@ -159,7 +158,7 @@ const DashboardHome = () => {
       <div class="card2">
         <h4 class="card-heading">Relative Humidity</h4>
         <div class="content">
-          <p class="value-index">{relativeHumidityData[0]?.value || 0}</p>
+          <p class="value-index">{relativeHumidityData[0]?.value || 0}%</p>
         </div>
       </div>
     
@@ -169,7 +168,7 @@ const DashboardHome = () => {
     <div class="card2">
         <h4 class="card-heading">Surface Temperature</h4>
         <div class="content">
-          <p class="value-index">{surfaceTemperatureData[0]?.value || 0}</p>
+          <p class="value-index">{surfaceTemperatureData[0]?.value || 0}°C</p>
         </div>
       </div>
     
@@ -179,7 +178,7 @@ const DashboardHome = () => {
     <div class="card2">
         <h4 class="card-heading">Rainfall</h4>
         <div class="content">
-          <p class="value-index">{rainfallData[0]?.value || 0}</p>
+          <p class="value-index">{rainfallData[0]?.value || 0} mm</p>
         </div>
       </div>
     
@@ -189,7 +188,7 @@ const DashboardHome = () => {
     <div class="card2">
         <h4 class="card-heading">Solar Irradiance</h4>
         <div class="content">
-          <p class="value-index">{solarIrradianceData[0]?.value || 0}</p>
+          <p class="value-index">{solarIrradianceData[0]?.value || 0} W/m²</p>
         </div>
       </div>
     
@@ -199,7 +198,7 @@ const DashboardHome = () => {
     <div class="card2">
         <h4 class="card-heading">Wind Speed</h4>
         <div class="content">
-          <p class="value-index">{windSpeedData[0]?.value || 0}</p>
+          <p class="value-index">{windSpeedData[0]?.value || 0} m/s</p>
         </div>
       </div>
     
@@ -209,7 +208,7 @@ const DashboardHome = () => {
     <div class="card2">
         <h4 class="card-heading">Pollution Parameters</h4>
         <div class="content">
-          <p class="value-index">{pollutionParametersData[0]?.value || 0}</p>
+          <p class="value-index">{pollutionParametersData[0]?.value || 0} ppm</p>
         </div>
       </div>
 
