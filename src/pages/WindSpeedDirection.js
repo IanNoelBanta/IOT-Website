@@ -44,7 +44,7 @@ const WindSpeedDirection = () => {
 
     {/* <div className="wind-direction">WIND DIRECTION</div> */}
       </div>
-      <div className="shown">{shown} </div>
+      <div className="shown1">{shown} </div>
       <div className="graph">
 
       <button className="graph-button" onClick={HandleToggle}>{buttonText}</button>

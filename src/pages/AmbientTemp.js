@@ -41,7 +41,7 @@ const AmbientTemp = () => {
       <div className="ambient-temp">
         <div className="ambient-temperature1"> AMBIENT TEMPERATURE</div>
       </div>
-      <div className="shown">{shown} </div>
+      <div className="shown1">{shown} </div>
       <div className="graph">
         <button className="graph-button" onClick={HandleToggle}>{buttonText}</button>
       <LineGraph data={shown === isHourly ? value : weeklyValue} labels={shown === isHourly ? filteredKey : weeklyKey} dataLimit={12}/>

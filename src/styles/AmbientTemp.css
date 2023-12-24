@@ -17,7 +17,7 @@ html, body {
   left: 1000px;
   font-size: 33px;
   font-weight: 600;
-  color: #925fe2;
+  color: #D64747;
   text-align: left;
   display: flex;
   align-items: center;
@@ -25,6 +25,21 @@ html, body {
   height: 61px;
   font-family: 'Poppins', sans-serif; 
 
+}
+
+.shown1{
+  position: absolute;
+  top: 800px;
+  left: 1000px;
+  font-size: 33px;
+  font-weight: 600;
+  color: #D64747;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 491px;
+  height: 61px;
+  font-family: 'Poppins', sans-serif; 
 }
 
 .ambient-temp {
@@ -45,7 +60,7 @@ html, body {
   left: 318px;
   font-size: 37px;
   font-weight: 600;
-  color: #925fe2;
+  color: #D64747;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +94,7 @@ height: 70vh;
 
 .graph-button {
   padding: 10px 20px;
-  background-color: darkviolet;
+  background-color: darkred;
   color: white;
   border: none;
   border-radius: 5px;
@@ -91,5 +106,5 @@ height: 70vh;
 
 /* Styles for button on hover */
 .graph-button:hover {
-  background-color: darkviolet;
+  background-color: darkred;
 }

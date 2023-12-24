@@ -40,7 +40,7 @@ const SurfaceTemperature = () => {
       <div className="surface-temperature">
         <div className="surface-temperature2">SURFACE TEMPERATURE</div>
       </div>
- <div className="shown">{shown} </div>
+ <div className="shown1">{shown} </div>
       <div className="graph">
 
       <button className="graph-button" onClick={HandleToggle}>{buttonText}</button>

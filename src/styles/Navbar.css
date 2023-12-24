@@ -29,7 +29,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  background: #240a52;
+  background-color: rgba(214, 71, 71, 0.4); 
   width: 233px;
   height: 955px;
 }
@@ -93,6 +93,7 @@
   align-items: flex-start;
   justify-content: center;
   gap: 40px;
+  
 }
 .logout-wrapper {
   top: 888px;
@@ -104,7 +105,7 @@
 .frame-child {
   position: relative;
   border-radius: 32px;
-  background: linear-gradient(180deg, #925fe2, #7042c0);
+  background: #C24641 ;
   width: 128px;
   height: 128px;
 }
