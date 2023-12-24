@@ -104,7 +104,36 @@ height: 70vh;
   margin-bottom: 20px; /* Adjust as needed */
 }
 
-/* Styles for button on hover */
-.graph-button:hover {
-  background-color: darkred;
+/* Responsive adjustments */
+@media only screen and (max-width: 576px) {
+  .ambient-temp {
+    height: 150px;
+  }
+
+  .ambient-temperature1 {
+    font-size: 3vw;
+  }
+
+  .graph {
+    height: 40vh;
+  }
+
+  .graph-button {
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .ambient-temp {
+    height: 150px;
+    font-size: 1.2rem;
+  }
+
+  .ambient-temperature1 {
+    font-size: 2vw;
+  }
+
+  .graph {
+    height: 45vh;
+  }
 }
