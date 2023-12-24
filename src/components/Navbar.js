@@ -11,7 +11,7 @@ function Navbar() {
     },
     {
       label: "Ambient Temperature",
-      icon: "/thermostat-black-24dp-2.svg",
+      // icon: "/thermostat-black-24dp-2.svg", img size problem
       link: "/AmbientTemp",
     },
     {
