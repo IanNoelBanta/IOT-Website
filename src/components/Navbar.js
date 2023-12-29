@@ -1,8 +1,11 @@
-import React from "react";
 import "../styles/Navbar.css";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 
 function Navbar() {
+  const navigate = useNavigate();
+
   const NavBtns = [
     {
       label: "Home",
@@ -47,6 +50,33 @@ function Navbar() {
     
   ];
 
+  const [authenticated, setAuthenticated] = useState(false);
+
+  useEffect(() => {
+    const auth = getAuth();
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setAuthenticated(true);
+      } else {
+        setAuthenticated(false);
+        navigate("/Login", { replace: true });
+      }
+    });
+
+    return () => unsubscribe();
+  }, [navigate]);
+
+  const logoutUser = async () => {
+    const auth = getAuth();
+    try {
+      await signOut(auth);
+      setAuthenticated(false);
+      navigate("/Login", { replace: true });
+    } catch (error) {
+      console.error("Error signing out:", error.message);
+    }
+  };
+
   return (
     <div className="frame-parent">
       <div className="frame-group">
@@ -63,11 +93,9 @@ function Navbar() {
       </div>
       <div/>
 
-      <div className="logout-wrapper">
-        <Link to="/Login">
+      {authenticated && <button className="logout-wrapper" onClick={logoutUser}>
           <img className="dashboard-icon" alt="Logout" src="/logout.svg" />
-        </Link>
-      </div>
+      </button>}
 
       <div className="rectangle-wrapper">
         <div className="frame-child" />
